@@ -1,0 +1,62 @@
+﻿body{
+	margin:0px;
+	}
+.bg{
+	background-image:url(../images1/gyan1.jpg);
+	background-position:left;
+	background-repeat:no-repeat;
+	}
+.top-sadho{
+	background-image:url(../images/bg-sadho.png);
+	background-repeat:repeat-y;
+	}
+.heading1{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	line-height:30px;
+	text-decoration:none;
+	padding-left:10px;
+	}
+.heading-more{
+	font-family:Tahoma;
+	font-size:12px;
+	text-decoration:none
+	}
+.heading-more a{
+	font-family:Tahoma;
+	font-size:12px;
+	color:#000000;
+	background-image:url(../images/arrow1.jpg);
+	background-repeat:no-repeat;
+	padding-left:28px;
+	background-position:center left;
+	line-height:30px;
+	text-decoration:none
+	}
+.heading-more a:hover{
+	font-family:Tahoma;
+	font-size:12px;
+	color:#333333;
+	text-decoration:none;
+	}
+.text{
+	font-family:Tahoma;
+	font-size:12px;
+	color:#4e4e4e;
+	text-decoration:none;
+	}
+.text1{
+	font-family:Tahoma;
+	font-size:12px;
+	color:#CCCCCC;
+	text-decoration:none;
+	}
+.text-filed{
+	font-family:Tahoma;
+	font-size:14px;
+	color:#666666;
+	border:#FFFFFF solid 1px;
+	text-decoration:none;
+	}

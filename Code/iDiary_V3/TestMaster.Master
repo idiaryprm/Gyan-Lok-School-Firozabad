@@ -1,0 +1,413 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="TestMaster.master.vb" Inherits="iDiary_V3.TestMaster" %>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Modern an Admin Panel Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link href="css/stylesheet.css" rel='stylesheet' type='text/css' />
+<script type="text/javascript" src="js/date_time.js"></script>
+ <!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph CSS -->
+<link href="css/lines.css" rel='stylesheet' type='text/css' />
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!----webfonts--->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<!---//webfonts--->  
+<!-- Nav CSS -->
+<link href="css/custom.css" rel="stylesheet">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<!-- Graph JavaScript -->
+<script src="js/d3.v3.js"></script>
+<script src="js/rickshaw.js"></script>
+</head>
+<body>
+<div id="wrapper">
+     <!-- Navigation -->
+        <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+            <img src="images/logo.png" width="139" height="70" alt="logo" style="float: left;
+    margin-left: 20px;
+    width: 80px;
+    height: auto;
+    margin-top: 15px;">
+    
+    <div class="navbar-header" style="margin-top: 20px; margin-left: 20px;">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+Bhartiya Vidyapeeth Bal Mandir, Agra
+
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-nav navbar-right">
+            
+               <span id="date_time" style="float: left; margin-top: 22px;"></span> <script type="text/javascript">window.onload = date_time('date_time');</script>
+            
+            
+           <a href="index.html"> <img src="images/logo.png" width="139" height="70" alt="logo" style="float: left; margin-left: 20px; width: 80px; height: auto;margin-top: 15px;"></a>
+    
+				<li class="dropdown">
+	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-comments-o"></i><span class="badge">4</span></a>
+	        		<ul class="dropdown-menu">
+						<li class="dropdown-menu-header">
+							<strong>Messages</strong>
+							<div class="progress thin">
+							  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+							    <span class="sr-only">40% Complete (success)</span>
+							  </div>
+							</div>
+						</li>
+						<li class="avatar">
+							<a href="#">
+								<img src="images/1.png" alt=""/>
+								<div>New message</div>
+								<small>1 minute ago</small>
+								<span class="label label-info">NEW</span>
+							</a>
+						</li>
+						<li class="avatar">
+							<a href="#">
+								<img src="images/2.png" alt=""/>
+								<div>New message</div>
+								<small>1 minute ago</small>
+								<span class="label label-info">NEW</span>
+							</a>
+						</li>
+						<li class="avatar">
+							<a href="#">
+								<img src="images/3.png" alt=""/>
+								<div>New message</div>
+								<small>1 minute ago</small>
+							</a>
+						</li>
+						<li class="avatar">
+							<a href="#">
+								<img src="images/4.png" alt=""/>
+								<div>New message</div>
+								<small>1 minute ago</small>
+							</a>
+						</li>
+						<li class="avatar">
+							<a href="#">
+								<img src="images/5.png" alt=""/>
+								<div>New message</div>
+								<small>1 minute ago</small>
+							</a>
+						</li>
+						<li class="avatar">
+							<a href="#">
+								<img src="images/pic1.png" alt=""/>
+								<div>New message</div>
+								<small>1 minute ago</small>
+							</a>
+						</li>
+						<li class="dropdown-menu-footer text-center">
+							<a href="#">View all messages</a>
+						</li>	
+	        		</ul>
+	      		</li>
+			    <li class="dropdown">
+	        		<a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"><img src="images/1.png"><span class="badge">9</span></a>
+                    
+	        		<ul class="dropdown-menu">
+						<li class="dropdown-menu-header text-center">
+							<strong>Welcome Admin</strong>
+						</li>
+                        <li class="m_2">Hello Admin
+<img src="images/1.png" style="margin-bottom: 10px; margin-top: 10px; margin-left: 10px; float:right;"> </li>
+						<li class="m_2"><a href="#"><i class="fa fa-bell-o"></i> Updates <span class="label label-info">42</span></a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-envelope-o"></i> Messages <span class="label label-success">42</span></a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-tasks"></i> Tasks <span class="label label-danger">42</span></a></li>
+						<li><a href="#"><i class="fa fa-comments"></i> Comments <span class="label label-warning">42</span></a></li>
+						<li class="dropdown-menu-header text-center">
+							<strong>Settings</strong>
+						</li>
+						<li class="m_2"><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-wrench"></i> Settings</a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-usd"></i> Payments <span class="label label-default">42</span></a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-file"></i> Projects <span class="label label-primary">42</span></a></li>
+						<li class="divider"></li>
+						<li class="m_2"><a href="#"><i class="fa fa-shield"></i> Lock Profile</a></li>
+						<li class="m_2"><a href="#"><i class="fa fa-lock"></i> Logout</a></li>	
+	        		</ul>
+	      		</li>
+			</ul>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sideli">
+                            <a href="index.html" style="margin-left: -10px; margin-top:-25px;"><i class="fa fa-home fa-fw nav_icon"></i>Back to Home</a>
+                        </li>
+                        
+                        
+                        
+                        <li class="sideli active">
+                            <a href="#"><img src="images/icons/admission.png" width="25" height="24" alt="admission" class="homeico"/>Admission<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href='#'>- Reports</a></li>
+		                <li><a href='#'>- Search</a></li>
+		                <li><a href='#'>- Graphs</a></li>
+		                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/enquiry.png" width="25" height="24" alt="admission" class="homeico"/>Enquiry<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Today's Task</a></li>
+		                <li><a href='#'>- Urgent</a></li>
+		                <li><a href='#'>- Overdues</a></li>
+		                <li><a href='#'>- Recurring</a></li>
+		                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/student.png" width="25" height="24" alt="student" class="homeico"/>Student<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Current Month</a></li>
+                <li><a href='#'>- Current Week</a></li>
+                <li><a href='#'>- Previous Month</a></li>
+                <li><a href='#'>- Next Month</a></li>
+                <li><a href='#'>- Next Week</a></li>
+                <li><a href='#'>- Team Calender</a></li>
+                <li><a href='#'>- Private Calender</a></li>
+                <li><a href='#'>- Settings</a></li>
+
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                       
+                       <li class="sideli">
+                            <a href="#"><img src="images/icons/fee.png" width="25" height="24" alt="fee" class="homeico"/>Fee<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/transport.png" width="25" height="24" alt="transport" class="homeico"/>Transport<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/library.png" width="25" height="24" alt="library" class="homeico"/>Library<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/examination.png" width="25" height="24" alt="home" class="homeico"/>Examination<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/certificate.png" width="25" height="24" alt="home" class="homeico"/>Certificate Generation<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/edocs.png" width="25" height="24" alt="home" class="homeico"/>Document Management System<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/configurations.png" width="25" height="24" alt="home" class="homeico"/>Configurations<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/change.png" width="25" height="24" alt="home" class="homeico"/>Change Password<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/teachers.png" width="25" height="24" alt="home" class="homeico"/>Teacher’s Diary<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/timetable.png" width="25" height="24" alt="home" class="homeico"/>Time Table<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/health.png" width="25" height="24" alt="home" class="homeico"/>Health Record Management<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/hr.png" width="25" height="24" alt="home" class="homeico"/>HR &amp; Payroll<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/training.png" width="25" height="24" alt="home" class="homeico"/>Training and Placement<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/messaging.png" width="25" height="24" alt="home" class="homeico"/>Messaging<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/alumni.png" width="25" height="24" alt="home" class="homeico"/>Alumni<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                      
+                        <li class="sideli">
+                            <a href="#"><img src="images/icons/report.png" width="25" height="24" alt="home" class="homeico"/>Report Bug<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                         <li class="sideli">
+                            <a href="#"><img src="images/icons/logout.png" width="25" height="24" alt="home" class="homeico"/>Logout<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                        <li><a href='#'>- Global Favs</a></li>
+                <li><a href='#'>- My Favs</a></li>
+                <li><a href='#'>- Team Favs</a></li>
+                <li><a href='#'>- Settings</a></li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <div id="page-wrapper">
+        <div class="graphs">
+        <div class="xs" style="background-color: #37C464;padding-top: 10px;padding-left: 10px;color: #fff;margin-top: -71px;">
+  	       <h4>Home</h4>
+  	        <h5><a href="#" style="color: #fff;float: right;margin-right: 190px; margin-top: -26px;">Academic Session 2014-2015</a> <a href="#" style="color: #fff;float: right; margin-top: -26px;">Loggin System : Admine</a></h5>
+         <div class="clearfix"> </div>
+   </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+		<div class="copy">
+            <p>Copyright &copy; 2015 Modern. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+	    </div>
+		</div>
+       </div>
+      <!-- /#page-wrapper -->
+   </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+

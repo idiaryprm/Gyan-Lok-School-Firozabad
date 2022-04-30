@@ -1,0 +1,69 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage.Master" AutoEventWireup="false" CodeBehind="PayrollTransaction.master.vb" Inherits="iDiary_V3.PayrollTransaction" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Heading" runat="server">
+        <asp:ContentPlaceHolder ID="SubHeading" runat="server">Payroll Master</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div style="float:right">
+        <asp:LinkButton ID="btnFSName" runat="server" ForeColor="Black"></asp:LinkButton>
+    </div>
+    <br />
+     <div class="content_bottom">
+         <div class="col-md-4 span_4" style="width:20%">
+            <div class="col_2" style="margin-left:-15px; ">
+                <div class="box_1">
+                   
+                </div>
+                <table >
+                    <tr>
+                        <td valign="top" align="left">
+                            <asp:TreeView ID="TreeView2" runat="server" ImageSet="Arrows" ExpandDepth="2">
+                                <ParentNodeStyle Font-Bold="False" />
+                                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                                <SelectedNodeStyle Font-Underline="True" ForeColor="#CC9900"
+                                    HorizontalPadding="0px" VerticalPadding="0px" Font-Bold="True" />
+                                <Nodes>
+                                    <asp:TreeNode Text="Attendance" Value="Attendance">
+                                        <asp:TreeNode NavigateUrl="~/EmpImportAttendance.aspx" Text="Import Attendance" Value="Import Attendance"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/EmployeeAttendance.aspx" Text="Mark Daily Attendance" Value="Mark Daily Attendance"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/EmpPendingLeaves.aspx" Text="Pending Leaves" Value="Pending Leaves"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/EmpCreditLeaves.aspx" Text="Credit Leaves" Value="Credit Leaves"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/EmpUpdateCreditLeaves.aspx" Text="Update Leaves" Value="Update Leaves"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/EmpMarkLeaves.aspx" Text="Mark Leaves" Value="Mark Leaves"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/PayrollHolidays.aspx" Text="Holidays" Value="Holidays"></asp:TreeNode>
+                                    </asp:TreeNode>
+                                    <asp:TreeNode Text="Salary Configuration" Value="Salary Configuration">
+                                        <asp:TreeNode NavigateUrl="~/EmpConfigSalaryHeads.aspx" Text="Config Salary Heads" Value="Status"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/EmpConfigSalary.aspx" Text="Config Employee Salary" Value="Nationality"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/EmpProcessSalary.aspx" Text="Process Salary" Value="Qualification"></asp:TreeNode>
+                                    </asp:TreeNode>
+                                    <asp:TreeNode Text="Payroll Reports" Value="Payroll Reports">
+                                        <asp:TreeNode NavigateUrl="~/EmployeeAttendanceReport.aspx" Text="Attendance Report" Value="Attendance Report"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="~/EmpGeneratePayBill.aspx" Text="Generate Pay Bill" Value="Designation"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="EmpSalarySlip.aspx" Text="Generate Salary Slip" Value="Generate Salary Slip"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="EmpBankStatement.aspx" Text="Bank Statement" Value="Bank Statement"></asp:TreeNode>
+                                        <asp:TreeNode NavigateUrl="EmpSalaryHeadStatement.aspx" Text="Salary Head Statement" Value="Salary Head Statement"></asp:TreeNode>
+                                    </asp:TreeNode>
+                                </Nodes>
+
+                                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black"
+                                    HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+
+                            </asp:TreeView>
+
+                        </td>
+                        <td width="80%" valign="top"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+         <div class="col-md-8 span_3" style="margin-left:1%;width:79%">
+            <div class="bs-example1" data-example-id="contextual-table">
+              <asp:ContentPlaceHolder ID="CertificateContent" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+       
+        <div class="clearfix"></div>
+    </div>
+
+</asp:Content>

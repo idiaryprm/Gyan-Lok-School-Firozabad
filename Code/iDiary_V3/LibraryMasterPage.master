@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" MasterPageFile="MasterPage.Master" AutoEventWireup="false" CodeBehind="LibraryMasterPage.master.vb" Inherits="iDiary_V3.LibraryMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Heading" runat="server">
+    <asp:ContentPlaceHolder ID="SubHeading" runat="server">Library Related Master Records</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <br />
+    <div class="content_bottom">
+        <div class="col-md-4 span_4" style="width: 20%">
+            <div class="col_2" style="margin-left: -15px;">
+                <div class="box_1">
+                </div>
+                <tr>
+                    <td width="20%" valign="top" style="text-align: justify">
+
+                        <asp:TreeView ID="TreeView1" runat="server" ImageSet="Arrows" Width="191px" ViewStateMode="Enabled">
+                            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                            <Nodes>
+                                <asp:TreeNode Text="Author Master" Value="Author Master" NavigateUrl="AuthorMaster.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Publisher Master" Value="Publisher Master" NavigateUrl="PublisherMaster.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Vendor Master" Value="Vendor Master" NavigateUrl="VenderMaster.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Rack Master" Value="Rack Master" NavigateUrl="RackMaster.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Book Category Master" Value="Book Category Master" NavigateUrl="BookCategoryMaster.aspx"></asp:TreeNode>
+                                <%--<asp:TreeNode Text="News Paper Master" Value="News Paper Master" NavigateUrl="NewsPaperMaster.aspx"></asp:TreeNode>--%>
+                                <asp:TreeNode Text="News Paper Master" Value="News Paper Master" NavigateUrl="NewsPapermaster.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Fine Configuration" Value="Fine Configuration" NavigateUrl="LibraryFineConfig.aspx"></asp:TreeNode>
+
+
+                            </Nodes>
+                            <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                            <ParentNodeStyle Font-Bold="False" />
+                            <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" BorderColor="Navy" BorderStyle="Solid" BorderWidth="1px" BackColor="#FF66CC" />
+                        </asp:TreeView>
+
+                    </td>
+
+                </tr>
+            </div>
+
+        </div>
+        <div class="col-md-8 span_3" style="margin-left: 1%; width: 79%">
+            <div class="bs-example1" data-example-id="contextual-table">
+                <asp:ContentPlaceHolder ID="LibraryMasterContents" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>    
+    
+</asp:Content>

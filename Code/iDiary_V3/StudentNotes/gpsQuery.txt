@@ -1,0 +1,38 @@
+delete from FeeDepositDetails where FeeDepositID in (select FeeDepositID from FeeDeposit where sid in (select SID from student where asid=3))
+
+
+delete from FeeCheque where FeeDepositID in (select FeeDepositID  from  FeeDeposit where sid in (select SID from student where asid=3))
+
+delete  from  FeeDeposit where sid in (select SID from student where asid=3)
+
+
+
+delete  from  FeeDueConfig where asid=3
+
+
+
+delete  from  FeeDues where asid=3
+
+
+delete  from  FeeDuesAdmission where asid=3
+
+
+
+
+delete from grp0_marks where sid in (select sid from student where asid=3)
+delete from grp1_marks where sid in (select sid from student where asid=3)
+delete from grp2_marks where sid in (select sid from student where asid=3)
+delete from grp3_marks where sid in (select sid from student where asid=3)
+delete from grp4_marks where sid in (select sid from student where asid=3)
+delete from grp5_marks where sid in (select sid from student where asid=3)
+delete from grpALL_Health_Self where sid in (select sid from student where asid=3)
+
+
+delete from StudentConcession where sid in (select SID from student where asid=3)
+
+
+
+delete from StudentTransport where sid in (select SID from student where asid=3)
+
+
+delete from TC where sid in (select SID from student where asid=3)

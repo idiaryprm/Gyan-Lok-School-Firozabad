@@ -1,0 +1,165 @@
+body {
+	font-family: tahoma;
+	font-size: 12px;
+	margin:0;
+	padding:0;
+	background-color:#DFE0E0 ;
+	scrollbar-face-color:#8080FF;
+scrollbar-arrow-color:#FFFFFF;
+scrollbar-track-color:#DDDDFF;
+scrollbar-shadow-color:'';
+scrollbar-highlight-color:'';
+scrollbar-3dlight-color:'';
+scrollbar-darkshadow-Color:'';
+	
+}
+#main_wapper{background:#DFE0E0 url(../images/main_bg.gif) repeat-x left top;}
+h1,h2,h3{ padding:0; margin:0;}
+ul,li{list-style-type:none; margin:0; padding:0;}
+.clear{clear:both}
+.mrt15{margin-top:15px;}
+.mrt26{margin-top:26px;}
+.mrt30{margin-top:30px;}
+.mrt10{margin-top:10px;}
+.plr15{padding-left:15px;
+	color: #FF0000;
+}
+.plrb{ padding:0 15px 15px 15px;}
+a{color:#fff; text-decoration:none;}
+a:hover{color:#079FC0}
+/*****************Top css strat here *****************/ 
+.lsize{width:1000px; margin:0 auto;}
+.logo{background:url(../images/logo.png) no-repeat right top; float:left; width:280px; height:115px;}
+.logo a{ display:block; width:265px; height:115px;text-indent:-9999px;text-decoration:none;}
+.idiarylogo{background:url(../images/idiarylogo.png) no-repeat right top;float:right;width:164px; margin:18px 8px 0 0;}
+.idiarylogo a{ display:block; width:164px; height:85px;text-indent:-9999px;}
+#nav ul{margin-left:30px}
+#nav li{float:left;margin-top:22px;}
+#nav li a{ font-family:Tahoma; font-size:16px; color:#fff;text-decoration:none;padding:0 10px; margin:0 20px}
+#nav li a:hover,#qustionpenal .cont a:hover,.cntbox .seeall a:hover{color:#000}
+#nav li ul{width:150px;display:none;background:#1F1F1F;border-radius:0 8px 8px 8px; position:absolute; z-index:5;top:160px; margin-left:20px;padding-bottom:10px;}
+#nav li ul li{ margin:5px 10px;padding-left:0}
+#nav li ul li a,#nav li .subhover ul li a:hover,#nav li .subhover:hover ul li a{ float:left; width:125px; border-bottom:1px dotted #fff;padding:5px 0; font-size:14px;background:none; margin:0;}
+#nav li .subhover ul li a:hover{color:#079FC0;}
+#nav li .subhover:hover ul{ display:block;}
+#nav li .subhover a:hover,#nav li .subhover:hover a{background:#1F1F1F;border-radius:8px 8px 0 0;padding:10px 10px;border:0;color:#fff;}
+/*****************Top css End here *****************/ 
+/*****************middle css strat here *****************/ 
+#middle{padding-top:17px;}
+#middle .lsize{background:url(../images/sub_bg.png) repeat-y left top;}
+#middle .leftpanal{float:left; width:240px; padding-left:8px; margin-left:11px;padding-top:5px;}
+#middle .leftpanal .studantpenal{ padding:3px 0 35px 0;}
+#middle .leftpanal .img_bg{background:url(../images/img_Bg.gif) no-repeat left top; width:238px; height:210px; text-align:center; vertical-align:middle; padding-top:45px;}
+#middle .leftpanal .imgdetail{background-color:#E6E6DD; padding:10px; font-family:tahoma; font-size:16px; width:209px; margin-left:5px;}
+#middle .leftpanal .detail{padding:25px 0 25px 8px; font-size:12px; line-height:18px;color:#6C6A6A}
+#middle .leftpanal .detail h3{padding-bottom:10px;font-size:18px;color:#545044}
+#middle .leftpanal .detail span{padding-right:10px; display:inline; font-weight:bold; font-size:14px}
+#middle .midpanal{float:left;width:445px; margin:10px 8px 10px 10px; margin-top:10px;}
+#middle .midpanaladmin{float:left;width:940px; margin:10px 8px 10px 10px; margin-top:10px;margin-left:30px;}
+#middle .midpanal .cntbox{ padding-bottom:10px;color:#6F7070;}
+#middle h2{border-bottom: 1px solid #949594;padding-bottom: 0;}
+#middle h2 span {border-bottom: 5px solid #289ECB;color:#525352;display: inline-block;font-family: tahoma;font-size:18px;padding-bottom:5px;}
+#middle .midpanal .cntbox li{float:left;background:url(../images/arrow.gif) no-repeat left 8px; padding-left:13px; width:100%; line-height:24px; font-weight:bold;}
+#middle .midpanal .cntbox li a{ text-decoration:none; color:#079FC0}
+#middle .midpanal .cntbox li a:hover{color:#525352;}
+.thoughts{padding:10px 15px 0 0; line-height:18px; font-weight:bold;}
+.thoughts .blc{ color:#020202; line-height:22px}
+#middle .midpanal .cntbox .event li a{color:#525352;}
+#middle .midpanal .cntbox .event li a:hover{color:#079FC0;}
+.blue{color:#079FC0; padding-left:10px;}
+#birpenal{margin-top:12px;}
+#middle .midpanal .cntbox #birpenal li{ float:left; margin-right:8px;width:64px;background:#959697; padding:5px;color:#fff;text-align:center; text-transform:uppercase; font-size:11px; font-weight:normal;}
+#qustionpenal{padding:10px 0;}
+#qustionpenal .img_bg{background:url(../images/qut_bg.gif) no-repeat left top;float:left;text-align:center; width:100px; height:100px;padding-top:22px}
+#qustionpenal .cont{float:left;width:300px;margin-left:10px; margin-top:8px;}
+#qustionpenal .cont a{font-size:12px;font-weight:bold;color:#079FC0; text-decoration:none; line-height:18px;}
+.cntbox .seeall a{ float:right;color:#079FC0;font-size:12px; text-decoration:none;margin-top:10px}
+#middle .rightpenal{width:250px; float:left; margin-right:8px; border-left:1px solid #A7A8A8;padding-left:8px; margin-top:10px;}
+#middle .rightpenal ul{width:250px}
+#middle .rightpenal li{float:left;margin:0 4px 15px 0;padding:5px;background-color:#CBCBCB; font-size:11px;
+    width: 232px;
+}
+
+/*****************middle css End here *****************/ 
+#logingbox{width:420px; margin:30px auto 0; background-color:#001119;border:3px solid #fff;box-shadow:2px 2px 13px 4px #888888;}
+#logingbox .bg{background:url(../images/login_bg.png) no-repeat 0 -3px; width:346px; margin:0 auto; height:272px;}
+#logingbox .bg table{padding:30px 20px 0 20px;font-size:14px;color:#fff;line-height:18x;}
+#logingbox .bg .textbox{width:186px; border:1px solid #001119; height:26px;}
+#logingbox .bg input{ margin:0; vertical-align:middle;}
+.loging_but{background: url(../images/loging_but.png) no-repeat 0 0; height:50px; width:102px; border:0}
+/* <Scroll> */
+div.scrollholder
+{
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+    hidden; height:182px;
+	width:250px;
+	margin-top:10px;
+}
+
+div.scroll
+{
+    position: absolute;
+    left: 0; top: 0;
+    width: 95%;
+    z-index: 2;
+}
+
+/* <Scroll> */
+div.track
+{
+    position: relative;
+    float:right;
+    top: 0; 
+    width: 11px; height: 100%;
+    font-size: 0;
+    z-index: 3;
+    background:#fff;
+}
+
+div.drag_bar
+{
+    position: absolute;
+    width: 100%; height: 14px;
+    cursor: pointer;
+    z-index: 4;
+    background:#334148;
+}  
+a.circular
+{
+	color:Navy ;
+	text-decoration:none;
+}
+.ListDefault
+{
+padding-right: 5px;
+	padding-left: 23px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	list-style-type: disc;
+	font-size: 12px;
+	color: blue;
+	list-style-image:url(images/New.gif);
+}
+.ListDefault:Hover
+{
+	color:red;
+}
+.ListDefault A:link 
+{
+	
+	TEXT-DECORATION: none;
+	
+}
+.ListDefault A:visited 
+{	
+	COLOR: #3399FF;
+}
+.ListDefault A:hover {
+		COLOR: red;
+	}
+
+.ListDefault A:active {
+	COLOR: #3399FF;
+}

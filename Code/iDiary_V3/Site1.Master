@@ -1,0 +1,311 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MasterPage.master.vb" Inherits="iDiary_V3.MasterPage" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Jesus & Mary Convent School, Greater Noida</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="JavaScript" src="js/scroll.js"></script>  
+</head>
+
+<body>
+    <form id="form1" runat="server">
+	<div id="main_wapper">
+	<!-------------Top Strat here--------------->
+	<div class="lsize">
+		<div id="header">
+			<h1 class="logo">
+				<a href="index.aspx">Jesus & Mary Convent School, Greater Noida</a>
+			</h1>
+			<div class="idiarylogo">
+				<a href="#">idiary</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+        		<div id="Div1">
+			<ul>
+				<li><a href="index.aspx">Home</a></li>
+				
+				<li>
+				<div class="subhover">
+				<a href="#" class="dark_red">Student</a>
+				<ul>
+				<li><a href="StudentMaster.aspx">Add / Edit Student</a></li>
+				<li><a href="StudentSearch.aspx?type=0">Search</a></li>
+				<li><a href="StudentSearch.aspx?type=1">Class List</a></li>
+				<li><a href="Promotion.aspx">Promotion Wizard</a></li>
+                <li><a href="Cert_Home.aspx">Certificates</a></li>
+				<li><a href="ClassMaster.aspx">Student Master Records</a></li>
+				</ul>
+				</div>
+				</li>
+				
+				<li>
+				<div class="subhover">
+				<a href="#" class="dark_red">Fee</a>
+				<ul>
+				<li><a href="FeeDeposit.aspx">Fee Deposit</a></li>
+				<li><a href="FeeDueList.aspx">Due List</a></li>
+				<li><a href="FeeCollectionReport.aspx">Fee Collection Report</a></li>
+				<li><a href="HeadwiseCollectionReport.aspx">Head / Term wise Report</a></li>
+				<li><a href="ConcessionReport.aspx">Concession Report</a></li>
+				<li><a href="FeeConfig.aspx">Fee Configuration</a></li>
+				<li><a href="FeeDueConfig.aspx">Due Configuration</a></li>
+                <li><a href="AddAdmissionFeeDues.aspx">Manage Admission Fee List</a></li>
+				<li><a href="FeeConcesssionConfig.aspx">Concession Config</a></li>
+				<li><a href="FeeTypes.aspx">Fee Heads</a></li>
+				</ul>
+				</div>
+				</li>
+
+				<li>
+				<div class="subhover">
+				<a href="#" class="dark_red">Exam</a>
+				<ul>
+                <li><a href="SubjectMaster.aspx">Subject Master</a></li>
+				<li><a href="SubjectMapping.aspx">Subject Mapping</a></li>
+				<li><a href="MarksEntry.aspx">Marks Entry</a></li>
+				<li><a href="AttEntry.aspx">Attendance Entry</a></li>
+				<li><a href="SummarySheet.aspx">Consolidated Statement</a></li>
+				<li><a href="ReportCardGeneration.aspx">Report Card Generation</a></li>
+				<li><a href="MarksSummary.aspx">Marks Summary</a></li>
+				</ul>
+				</div>
+				</li>
+								
+                <li>
+				<div class="subhover">
+				<a href="#" class="dark_red">Library</a>
+				<ul>
+		            <li><a href="BookMaster.aspx">Add / Edit Book Entry</a></li>
+		            <li><a href="IssueBook.aspx">Issue/Return</a></li>
+		            <li><a href="LibrarySearch.aspx">Search Section</a></li>
+                    <li><a href="LibraryIssueReturnReport.aspx">Transaction Report</a></li>
+                    <li><a href="AuthorMaster.aspx">Author Master</a></li>
+		            <li><a href="PublisherMaster.aspx">Publisher Master</a></li>
+		            <li><a href="RackMaster.aspx">Rack Master</a></li>
+		            <li><a href="BookCategoryMaster.aspx">Book Category Master</a></li>
+		            <li><a href="BookStatusMaster.aspx">Book Status Master</a></li>
+		            <li><a href="LibraryBarCodeGeneration.aspx">Generate Bar Codes</a></li>
+				</ul>
+				</div>
+				</li>
+
+                <li>
+				<div class="subhover">
+				<a href="#" class="dark_red">HR/Payroll</a>
+				<ul>
+
+                        <li><a href="HR_Masters.aspx">Masters</a></li>
+                        <li><a href="HR_Transactions.aspx">Transactions</a></li>
+                        <li><a href="HR_Reports.aspx">Reports</a></li>
+				</ul>
+				</div>
+				</li>
+
+				<li>
+				<div class="subhover">
+				<a href="#" class="dark_red">Admin</a>
+				<ul>
+                <li><a href="ManageDocuments.aspx">Manage Documents</a></li>
+                <li><a href="SearchDocument.aspx">Search Document</a></li>
+                <li><a href="DetainStudent.aspx">Detain Students</a></li>
+                <li><a href="SendSMS.aspx">SMS Notifications</a></li>
+                <li><a href="SMSTemplates.aspx">SMS Templates</a></li>
+                <li><a href="Certificates.aspx">Certificates</a></li>
+				<li><a href="CreateUsers.aspx">Users</a></li>
+				<%--<li><a href="OnlineSync.aspx">Online Sync</a></li>--%>
+				</ul>
+				</div>
+				</li>
+
+				<li>
+				<div class="subhover">
+				<a href="#" class="dark_red">Options</a>
+				<ul>
+				<li><a href="ChangePassword.aspx">Change Password</a></li>
+				</ul>
+				</div>
+				</li>
+
+
+				<li><a href="Logout.aspx">Logout</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-------------Top End here--------------->
+	<!-------------Middle Strat here--------------->
+	<div id="Div2">
+		<div class="lsize">
+			<div class="leftpanal">
+			</div>
+			<div class="midpanal">
+				<div class="cntbox">
+					<h2><span><asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder2"></asp:ContentPlaceHolder></span></h2>
+				</div>
+				
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                
+                </asp:ContentPlaceHolder>
+
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-------------Middle Strat here--------------->
+	</div>
+    
+
+    </form>
+</body>
+</html>
+
+		<div id="nav">
+			<ul>
+				<li>
+				    <div class="subhover">
+				        <a href="#" class="dark_red">Student</a>
+				        <ul>
+				            <li><a href="StudentMaster.aspx">Add / Edit Student</a></li>
+				            <li><a href="StudentSearch.aspx?type=0">Search</a></li>
+				            <li><a href="StudentSearch.aspx?type=1">Class List</a></li>
+				            <li><a href="Promotion.aspx">Promotion Wizard</a></li>
+                            <li><a href="Cert_Home.aspx">Certificates</a></li>
+				            <li><a href="ClassMaster.aspx">Student Master Records</a></li>
+        			    </ul>
+		    	    </div>
+				</li>
+				
+				<li>
+				    <div class="subhover">
+				        <a href="#" class="dark_red">Fee</a>
+				        <ul>
+				            <li><a href="FeeDeposit.aspx">Fee Deposit</a></li>
+				            <li><a href="FeeDueList.aspx">Due List</a></li>
+				            <li><a href="FeeCollectionReport.aspx">Fee Collection Report</a></li>
+				            <li><a href="HeadwiseReport.aspx">Head / Term wise Report</a></li>
+				            <li><a href="ConcessionReport.aspx">Concession Report</a></li>
+                            <li><a href="ManageAdmissionDues.aspx">Manage Admission Fee List</a></li>
+				            <li><a href="FeeTypes.aspx">Fee Master Records</a></li>
+				        </ul>
+				    </div>
+				</li>
+
+				<li>
+				    <div class="subhover">
+				        <a href="#" class="dark_red">Exam</a>
+				        <ul>
+                            <li><a href="SubjectMaster.aspx">Subject Master</a></li>
+				            <li><a href="SubjectMapping.aspx">Subject Mapping</a></li>
+				            <li><a href="MarksEntry.aspx">Marks Entry</a></li>
+				            <li><a href="AttEntry.aspx">Attendance Entry</a></li>
+				            <li><a href="#">Consolidated Statement</a></li>
+				            <li><a href="#">Report Card Generation</a></li>
+				        </ul>
+				    </div>
+				</li>
+								
+                <li>
+				    <div class="subhover">
+				        <a href="#" class="dark_red">Library</a>
+				        <ul>
+		                    <li><a href="BookMaster.aspx">Add / Edit Book Entry</a></li>
+		                    <li><a href="IssueBook.aspx">Issue/Return</a></li>
+		                    <li><a href="LibrarySearch.aspx">Search Section</a></li>
+                            <li><a href="LibraryIssueReturnReport.aspx">Transaction Report</a></li>
+                            <li><a href="AuthorMaster.aspx">Author Master</a></li>
+		                    <li><a href="PublisherMaster.aspx">Publisher Master</a></li>
+		                    <li><a href="RackMaster.aspx">Rack Master</a></li>
+		                    <li><a href="BookCategoryMaster.aspx">Book Category Master</a></li>
+		                    <li><a href="BookStatusMaster.aspx">Book Status Master</a></li>
+		                    <li><a href="LibraryBarCodeGeneration.aspx">Generate Bar Codes</a></li>
+				        </ul>
+				    </div>
+				</li>
+
+                <li>
+				    <div class="subhover">
+				        <a href="#" class="dark_red">HR/Payroll</a>
+				        <ul>
+                            <li><a href="HR_Masters.aspx">Masters</a></li>
+                            <li><a href="HR_Transactions.aspx">Transactions</a></li>
+                            <li><a href="HR_Reports.aspx">Reports</a></li>
+				        </ul>
+				    </div>
+				</li>
+
+                <li>
+				    <div class="subhover">
+				        <a href="#" class="dark_red">e-Docs</a>
+				        <ul>
+                            <li><a href="ManageDocuments.aspx">Manage Documents</a></li>
+                            <li><a href="SearchDocument.aspx">Search Document</a></li>
+				        </ul>
+				    </div>
+				</li>
+
+                <li>
+				    <div class="subhover">
+				        <a href="#" class="dark_red">Petty Cash</a>
+				        <ul>
+				            <li><a href="PettyCashTransactions.aspx">Transactions</a></li>
+				            <li><a href="PettyCashStatement.aspx">Statement</a></li>
+				            <li><a href="PettyCashHeads.aspx">Petty Cash Heads</a></li>
+				        </ul>
+				    </div>
+				</li>
+
+				<li>
+				    <div class="subhover">
+				        <a href="#" class="dark_red">Admin</a>
+				        <ul>
+				            <li><a href="CreateUsers.aspx">Users</a></li>
+                            <li><a href="SMSTemplates.aspx">SMS Templates</a></li>
+                            <li><a href="SendSMS.aspx">SMS Notifications</a></li>
+ 				        </ul>
+				    </div>
+				</li>
+
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-------------Top End here--------------->
+	<!-------------Middle Strat here--------------->
+	<div id="middle">
+		<div class="lsize">
+			<div class="leftpanal">
+			</div>
+			<div class="midpanal">
+				<div class="cntbox">
+                    <table border="0" cellpadding="2" cellspacing="2">
+                        <tr>
+                            <td width="50%" align="left">
+                                <asp:LinkButton ID="btnHome" runat="server" ForeColor="Navy">Home</asp:LinkButton> &nbsp;|&nbsp;
+                                <asp:LinkButton ID="btnLogout" runat="server" ForeColor="Navy">Logout</asp:LinkButton>                            
+                            </td>
+                            <td width="50%" align="right">
+                                <asp:LinkButton ID="btnASName" runat="server" ForeColor="Navy">My Button</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+					<h2><span><asp:ContentPlaceHolder runat="server" ID="Heading"></asp:ContentPlaceHolder></span></h2>
+				</div>
+				
+                <br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                </asp:ContentPlaceHolder>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-------------Middle Strat here--------------->
+	</div>
+    
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,125 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage.Master" AutoEventWireup="false"  CodeBehind="ExamMasterPage.master.vb" Inherits="iDiary_V3.ExamMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Heading" runat="server">
+    <asp:ContentPlaceHolder ID="SubHeading" runat="server">Exam Related Records </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br />
+   <div class="content_bottom">
+        <div class="col-md-4 span_4" style="width: 20%">
+            <div class="col_2" style="margin-left: -15px;">
+                        
+            <table  >
+                <tr>
+                    <td valign="top" align="left">
+                        <asp:TreeView ID="TreeView1" runat="server" ImageSet="Arrows" ExpandDepth="2">
+                            <ParentNodeStyle Font-Bold="False" />
+                            <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                            <SelectedNodeStyle Font-Underline="True" ForeColor="#CC9900" 
+                                HorizontalPadding="0px" VerticalPadding="0px" Font-Bold="True" />
+                            <Nodes>
+                                <asp:TreeNode Text="Report Card Generation" Value="Report Card Generation">
+                                    <asp:TreeNode Text="Marks Entry" Value="Marks Entry">
+                                        <asp:TreeNode Text="Group-1 (I-V)" Value="Group-1 (I-V)">
+                                             <asp:TreeNode Text="Marks Entry" Value="Marks Entry">
+                                                 <asp:TreeNode NavigateUrl="~/Exam_MarksEntry.aspx?grpID=1&amp;type=SA" Text="Scholastic Areas" Value="Scholastic Areas"></asp:TreeNode>
+                                                 <asp:TreeNode Text="Competencies" Value="Competencies">
+                                                     <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Language English" Text="A. Language English" Value="A. Language English"></asp:TreeNode>
+                                                     <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Language Hindi" Text="B. Language Hindi" Value="B. Language Hindi"></asp:TreeNode>
+                                                     <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Mathematics" Text="C. Mathematics" Value="C. Mathematics"></asp:TreeNode>
+                                                     <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Env. Studies" Text="D. Env. Studies" Value="D. Env. Studies"></asp:TreeNode>
+                                                     <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Computer" Text="E. Computer" Value="E. Computer"></asp:TreeNode>
+                                                     <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=General Knowledge" Text="F. General Knowledge" Value="F. General Knowledge"></asp:TreeNode>
+                                                     <asp:TreeNode Text="G. Co-Curricular Activities" Value="G. Co-Curricular Activities">
+                                                         <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Co-Curricular Activity-Games" Text="Games" Value="Games"></asp:TreeNode>
+                                                         <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Co-Curricular Activity-Art and Craft" Text="Art and Craft" Value="Art &amp; Craft"></asp:TreeNode>
+                                                         <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Co-Curricular Activity-Music and Dance" Text="Music and Dance" Value="Music &amp; Dance"></asp:TreeNode>
+                                                     </asp:TreeNode>
+                                                     <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Personality Development" Text="H. Personality Development" Value="H. Personality Development"></asp:TreeNode>
+                                                     <asp:TreeNode NavigateUrl="~/Exam_GradesEntry.aspx?grpID=1&amp;SubName=Health Status" Text="I. Health Status" Value="I. Health Status"></asp:TreeNode>
+                                                 </asp:TreeNode>
+                                            </asp:TreeNode>
+                                             <asp:TreeNode Text="Attendance" Value="Attendance" NavigateUrl="~/Exam_Attendance.aspx?grpID=1&amp;SubName=Attendance"></asp:TreeNode>
+                                             <asp:TreeNode Text="Remarks" Value="Remarks" NavigateUrl="~/Group1_Remark.aspx?grpID=1&amp;SubName=Attendance"></asp:TreeNode>
+                                            <%--<asp:TreeNode Text="Health" Value="Health" NavigateUrl="~/Group1_Health.aspx?grpID=1&entryType=Health"></asp:TreeNode>--%>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Group-2 (VI-VIII)" Value="Group-2 (VI-VIII)">
+                                            <%--<asp:TreeNode Text="Self Awareness" Value="Self Awareness" 
+                                                NavigateUrl="~/Exam_SelfAwareness.aspx"></asp:TreeNode>--%>
+                                            <asp:TreeNode NavigateUrl="~/Exam_MarksEntry.aspx?grpID=2" Text="Marks Entry" Value="Marks Entry"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/Exam_ActivityEntry.aspx?grpID=2" Text="Activity Entry" Value="Activity Entry"></asp:TreeNode>
+                                            <asp:TreeNode Text="Health" Value="Health" NavigateUrl="~/Group1_Health.aspx?grpID=2&entryType=Health"></asp:TreeNode>
+                                             <asp:TreeNode Text="Attendance" Value="Attendance" NavigateUrl="~/Exam_Attendance.aspx?grpID=2&amp;SubName=Attendance"></asp:TreeNode>
+                                            <asp:TreeNode Text="Co-Scholastic Area" Value="Co-Scholastic Area" 
+                                                NavigateUrl="~/Exam_CoScArea.aspx?grpId=2&amp;type=2">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Co-Scholastic Activity" Value="Co-Scholastic Activity" 
+                                                NavigateUrl="~/Exam_CoScActivity.aspx?grpId=2&amp;type=3">
+                                            </asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Group-3 (IX-X)" Value="Group-3 (IX-X)">
+                                            <asp:TreeNode Text="Marks Entry" Value="Marks Entry" NavigateUrl="~/Exam_MarksEntry.aspx?grpID=3">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/Exam_ActivityEntry.aspx?grpID=3" Text="Activity Entry" Value="Activity Entry"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/Group1_Health.aspx?grpID=3&amp;entryType=Health" Text="Health" Value="Health"></asp:TreeNode>
+                                            <asp:TreeNode Text="Attendance" Value="Attendance" NavigateUrl="~/Exam_Attendance.aspx?grpID=3&amp;SubName=Attendance"></asp:TreeNode>
+                                            <asp:TreeNode Text="Co-Scholastic Area" Value="Co-Scholastic Area" NavigateUrl="~/Exam_CoScArea.aspx?grpId=3&amp;type=2"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/Exam_CoScActivity.aspx?grpId=3&amp;type=3" Text="Co-Scholastic Activity" Value="Co-Scholastic Activity"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Group-4 (XI-XII)" Value="Group-4 (XI-XII)">
+                                            <%--<asp:TreeNode Text="Self Awareness" Value="Self Awareness" 
+                                                NavigateUrl="~/Exam_SelfAwareness.aspx"></asp:TreeNode>--%>
+                                            <asp:TreeNode Text="Marks Entry" Value="Marks Entry" 
+                                                NavigateUrl="~/Exam_MarksEntry_Grp4.aspx?grpID=4"></asp:TreeNode>
+                                            <asp:TreeNode Text="Health" Value="Health" NavigateUrl="~/Group1_Health.aspx?grpID=4&amp;entryType=Health"></asp:TreeNode>
+                                             <asp:TreeNode Text="Attendance" Value="Attendance" NavigateUrl="~/Exam_Attendance.aspx?grpID=4&amp;SubName=Attendance"></asp:TreeNode>
+                                            <asp:TreeNode Text="Co-Scholastic Area" Value="Co-Curricular Activities" 
+                                                NavigateUrl="~/Exam_CoScArea.aspx?grpId=4&amp;type=2">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="Co-Scholastic Activity" Value="Remarks" 
+                                                NavigateUrl="~/Exam_CoScArea.aspx?grpId=4&amp;type=3">
+                                            </asp:TreeNode>
+                                        </asp:TreeNode>
+                                    </asp:TreeNode>
+                                    <asp:TreeNode Text="Exam Reports" Value="Marks Reports">
+                                        <asp:TreeNode Text="Group-1 (I-V)" Value="Group-1 (I-V)">
+                                            <asp:TreeNode NavigateUrl="~/Exam_Reports.aspx?grpid=1&amp;type=SA" Text="Scholastic" Value="Scholastic"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/Exam_Reports.aspx?grpid=1&amp;type=Comp" Text="Comptencies" Value="Comptencies"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Group-2 (VI-VIII)" Value="Group-2 (VI-VIII)" NavigateUrl="~/Exam_Reports.aspx?grpid=2">
+                                            <%--<asp:TreeNode Text="Self Awareness" Value="Self Awareness" 
+                                                NavigateUrl="~/Exam_SelfAwareness.aspx"></asp:TreeNode>--%>
+                                        </asp:TreeNode>
+                                         <asp:TreeNode Text="Group-3 (IX-X)" Value="Group-3 (IX-X)" NavigateUrl="~/Exam_Reports.aspx?grpid=3">
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Group-4 (XI-XII)" Value="Group-4 (XI-XII)" NavigateUrl="~/Exam_Reports.aspx?grpid=4">
+                                            <%--<asp:TreeNode Text="Self Awareness" Value="Self Awareness" 
+                                                NavigateUrl="~/Exam_SelfAwareness.aspx"></asp:TreeNode>--%>
+                                        </asp:TreeNode>
+                                    </asp:TreeNode>
+                                  
+                                </asp:TreeNode>
+                                
+                            </Nodes>
+                        
+                            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                                HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                        
+                        </asp:TreeView>
+                    </td>
+                   
+                </tr>
+            </table>
+                </div> </div>
+                <div class="col-md-8 span_3" style="margin-left: 1%; width: 79%">
+            <div class="bs-example1" data-example-id="contextual-table">
+           
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                        
+                        </asp:ContentPlaceHolder>
+                 </div>
+        </div>
+         
+       <div class="clearfix"></div>
+   </div> 
+
+</asp:Content>

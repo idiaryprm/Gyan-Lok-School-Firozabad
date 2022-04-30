@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/MasterPage.Master" AutoEventWireup="false"  CodeBehind="ExamAdminMasterPage.Master.vb" Inherits="iDiary_V3.ExamAdminMasterPage" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Heading" runat="server">
+    <asp:ContentPlaceHolder ID="SubHeading" runat="server">Exam Related Records </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <br />
+    <div class="content_bottom">
+        <div class="col-md-4 span_4" style="width: 25%">
+            <div class="col_2" style="margin-left: -15px;">
+                <div class="box_1">
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <asp:TreeView ID="TreeView1" runat="server" ImageSet="Arrows" ExpandDepth="2">
+                                <ParentNodeStyle Font-Bold="False" />
+                                <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                                <SelectedNodeStyle Font-Underline="True" ForeColor="#CC9900"
+                                    HorizontalPadding="0px" VerticalPadding="0px" Font-Bold="True" />
+                                <Nodes>
+                                    <asp:TreeNode Text="Exam Master Configuration" Value="Report Card Generation">
+                                        <asp:TreeNode Text="Exam Group" Value="Master Data">
+                                            <asp:TreeNode NavigateUrl="~/ExamGroupMaster.aspx" Text="Group Master" Value="Group Master"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/ExamGroupConfig.aspx" Text="Group Class Config" Value="Group Config."></asp:TreeNode>
+
+
+
+
+
+                                        </asp:TreeNode>
+                                        <%--<asp:TreeNode Text="Report Card Generation" Value="Report Generation">
+                                            <asp:TreeNode Text="I-V (Group-1)"
+                                                Value="KG-IV (Group-1)" NavigateUrl="~/Exam_Grp1_ReportCard.aspx"></asp:TreeNode>
+                                            <asp:TreeNode Text="VI-VIII (Group-2)" Value="VI-VIII (Group-2)"
+                                                NavigateUrl="~/Exam_ReportCard.aspx?grpid=2"></asp:TreeNode>
+                                            <asp:TreeNode Text="IX-X (Group-3)" Value="IX-X (Group-3)"
+                                                NavigateUrl="~/Exam_ReportCard.aspx?grpid=3"></asp:TreeNode>
+                                            <asp:TreeNode Text="XI-XII (Group-4)" Value="XI-XII (Group-4)"
+                                                NavigateUrl="~/Exam_ReportCard.aspx?grpid=4"></asp:TreeNode>
+                                        </asp:TreeNode>--%>
+                                        <asp:TreeNode Text="Exam Term" Value="Exam Term Data">
+                                            <asp:TreeNode NavigateUrl="~/ExamTermMaster.aspx" Text="Exam Term Master" Value="Term Master"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/ExamTermConfig.aspx" Text="Exam Term Config" Value="Term Config."></asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Exam Subject" Value="Exam Subject Data">
+                                            <asp:TreeNode NavigateUrl="~/ExamSubjectGroupmaster.aspx" Text="Subject Group Master" Value="Subject Group Master"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/ExamSubjectMaster.aspx" Text="Subject Master" Value="Subject Master"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/ExamSubjectMapping.aspx" Text="Subject Mapping" Value="Subject Mapping"></asp:TreeNode>
+                                          <%--  <asp:TreeNode NavigateUrl="~/ExamSubjectPriority.aspx" Text="Subject Display Sequence" Value="Subject Display Sequence"></asp:TreeNode>--%>
+                                            <asp:TreeNode Text="Copy Subject Mapping" Value="Copy Subject Mapping" NavigateUrl="~/ExamSubjectMappingImport.aspx"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/ExamAbbreviation.aspx" Text="Marks Entry Exceptions" Value="Marks Entry Exceptions"></asp:TreeNode>
+                                            <%--   <asp:TreeNode NavigateUrl="~/DescriptiveIndicators.aspx" Text="Descriptive Indicators" Value="Descriptive Indicators"></asp:TreeNode>--%>
+                                            <asp:TreeNode NavigateUrl="~/ExamRemarksMaster.aspx" Text="Remarks Master" Value="Remarks Master"></asp:TreeNode>
+                                        </asp:TreeNode>
+
+                                        <asp:TreeNode Text="Exam Grade" Value="Exam Grade">
+                                            <asp:TreeNode NavigateUrl="~/ExamGradeMaster.aspx" Text="Grade Master" Value="Grade Master"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/ExamGradeMapping.aspx" Text="Grade Mapping" Value="Grade Mapping"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                        <asp:TreeNode Text="Exam Permission"
+                                            Value="Admin">
+                                            <asp:TreeNode NavigateUrl="~/ExamConfig.aspx" Text="Marks Entry Freeze"
+                                                Value="Configuration"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/ExamUserPermissions.aspx" Text="Permission Management"
+                                                Value="Permission Management"></asp:TreeNode>
+                                            <asp:TreeNode NavigateUrl="~/ExamConfiguration.aspx" Text="Exam Configuration"
+                                                Value="Exam Configuration"></asp:TreeNode>
+                                        </asp:TreeNode>
+                                    </asp:TreeNode>
+
+                                </Nodes>
+
+                                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black"
+                                    HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+
+                            </asp:TreeView>
+
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-md-8 span_3" style="margin-left: 1%; width: 74%">
+            <div class="bs-example1" data-example-id="contextual-table">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+</asp:Content>

@@ -1,0 +1,142 @@
+﻿#contenitore{
+position: relative;
+text-align:center;
+overflow:hidden;
+height:421px;
+border: 1px solid #c4c4c4; 
+    border-radius: 4px; 
+    -moz-border-radius: 4px;
+	 -webkit-border-radius: 4px; 
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    
+}
+.left{
+float:left;
+width:48%;
+margin-top:10px
+}
+#grafico{
+position:relative;
+height:300px;
+border-left:2px solid #000000;
+border-bottom: 2px solid #000000;
+width:250%;
+margin-top:20px;
+}
+.riga{
+position:absolute;
+left:0;
+height: 1px;
+background-color:gray;
+width: 75%;
+}
+.riga div{
+float:left;
+margin: -8px 0 0 -30px;
+}
+.riga1 {
+    position:absolute;
+left:0;
+width: 100%;
+}
+.riga1 div{
+float:left;
+/*margin: 8px 0 0 -30px;*/
+
+}
+.canc{
+clear:both;
+}
+
+.column{
+position:absolute;
+width: 4%;
+bottom: 0;
+background-color: #37C464;
+margin-left:2%;
+}
+
+.column div{
+margin-top:-20px;
+height:20px;
+vertical-align:-20px
+}
+
+.column2{
+position:absolute;
+width: 4%;
+bottom: 0;
+background-color: #37C464;
+margin-left:2%;
+}
+
+.column2 div{
+height:20px;
+color:white;
+}
+
+#contenitore2{
+position: relative;
+text-align:center;
+overflow:hidden;
+height:420px;
+border: 1px solid #c4c4c4; 
+    border-radius: 4px; 
+    -moz-border-radius: 4px;
+	 -webkit-border-radius: 4px; 
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9; 
+    
+}
+#grafico2{
+position:relative;
+height:300px;
+border-left:2px solid #000000;
+border-bottom: 2px solid #000000;
+width:250%;
+margin-top:20px;
+margin-left:20px
+}
+
+.colu{
+position:absolute;
+width: 8%;
+bottom: 0;
+background-color: #37C464;
+margin-left:2%;
+}
+
+.colu div{
+margin-top:-20px;
+height:20px;
+color:Black;
+vertical-align:-20px
+}
+
+.colu2{
+position:absolute;
+width: 8%;
+bottom: 0;
+background-color: #37C464;
+margin-left:2%;
+}
+
+.colu2 div{
+height:20px;
+color:White;
+}
+
+.riga2{
+position:absolute;
+left:0;
+height: 1px;
+background-color:gray;
+width: 72%;
+}
+.riga2 div{
+float:left;
+margin: -15px 0 0 -45px;
+}

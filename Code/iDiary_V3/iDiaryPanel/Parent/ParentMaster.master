@@ -1,0 +1,199 @@
+﻿<%@ Master Language="VB" Inherits="iDiary_V3.Parent_ParentMaster" Codebehind="ParentMaster.master.vb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Welcome to your site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <link href="../../css/StyleSheet.css" rel="stylesheet" />
+    <script type="text/javascript" src="../../date_time.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="../../css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="../../css/lines.css" rel='stylesheet' type='text/css' />
+    <link href="../../css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="../../js/jquery.min.js"></script>
+    <!----webfonts--->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!-- Nav CSS -->
+    <link href="../../css/custom.css" rel="stylesheet" />
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../../js/metisMenu.min.js" type="text/javascript"></script>
+    <script src="../../js/custom.js" type="text/javascript"></script>
+    <!-- Graph JavaScript -->
+    <script src="../../js/d3.v3.js" type="text/javascript"></script>
+    <script src="../../js/rickshaw.js" type="text/javascript"></script>
+     <script type="text/javascript">
+         function imgError(image) {
+             image.onerror = "";
+             image.src = "../../images/StudentDummy.jpg";
+             return true;
+         }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <div id="wrapper">
+            <!-- Navigation -->
+            <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+                <img src="../../images/SchoolLogo.png" width="139" height="70" alt="logo" style="float: left;margin-left: 10px;width: 120px;height: 70px;margin-top: 0px;">
+
+                <div class="navbar-header" style="margin-top: 20px; margin-left: 20px;">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+<b>St. Conrad's Inter College, Agra</b>                    
+
+                </div>
+                <!-- /.navbar-header -->
+                <ul class="nav navbar-nav navbar-right">
+                   
+                    <div style="float: left;font-size:.9em;margin-top: 22px;"><span id="date_time" ></span>
+                    <script type="text/javascript">window.onload = date_time('date_time');</script><br />
+                        <center><asp:Label ID="lblSession" runat="server" Text=""></asp:Label></center>
+                    </div> 
+                    
+                  
+                    <a href="ParentHome.aspx">
+                        <img src="../../images/logo.png" width="139" height="70" alt="logo" style="float: left; margin-left: 20px; width: 80px; height: auto; margin-top: 15px;" /></a>
+
+                    
+                    
+                    <li class="dropdown" style="margin-top:22px">
+                        <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
+                            <%--<img src="../../images/StudentDummy.jpg">--%>
+                            
+                            <asp:Image ID="imgSmall" runat="server" onerror="imgError(this);" width="139" height="70" alt="logo" style="float: left; margin-left: 20px; width: 50px; height: 50px;"></asp:Image><span class="badge"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-header text-center">
+                                <strong>Welcome Admin</strong>
+                            </li>
+                            <li class="m_2">Hello Admin
+                                 <asp:Image ID="imgPhoto" CssClass="textbox" runat="server" Height="155px" Width="149px" onerror="imgError(this);"/>
+                               <%-- <img src="EmpPhotos/01.jpg" style="margin-bottom: 10px; margin-top: 10px; margin-left: 10px; float: right;">--%>
+                            </li>
+                          
+                            <li class="m_2"><a href="../ParentLogout.aspx"><i class="fa fa-lock"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <div id="sideli">
+                        <ul class="nav" id="side-menu">
+                            <li class="sideli">
+                                <a href="ParentHome.aspx" style="margin-left: -10px; margin-top: -25px;"><i class="fa fa-home fa-fw nav_icon"></i>Back to Dashboard</a>
+                            </li>
+
+                            <%--<li class="sideli">
+                                <a href="ParentHome.aspx">
+                                    <img src="../../images/icons/student.png" width="25" height="24" alt="admission" class="homeico" />Dashboard<span class="fa arrow"></span></a>
+                                
+                            </li>--%>
+
+                           <li class="sideli">
+                                <a href="#">
+                                    <img src="../../images/icons/alumni.png" width="25" height="24" alt="student" class="homeico" />Academics<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li><a href="ViewAttendance.aspx">Attendance</a></li>
+				<li><a href="ViewAssignments.aspx">Assignments</a></li>
+				<li><a href="ViewSyllabus.aspx">Syllabus</a></li>
+				<li><a href="ViewAcademicCalender.aspx">Academic Calender</a></li>
+				<%--<li><a href="ViewTimeTable.aspx">Time Table</a></li>
+				<li><a href="ProgressReport.aspx">Progress Report</a></li>--%>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+
+                            <li class="sideli">
+                                <a href="FeeHistory.aspx">
+                                    <img src="../../images/icons/fee.png" width="25" height="24" alt="fee" class="homeico" />Fees History<span class="fa arrow"></span></a>
+                                
+                            </li>
+                            
+                            <li class="sideli">
+                                <a href="#">
+                                    <img src="../../images/icons/messaging.png" width="25" height="24" alt="home" class="homeico" />Messages<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                   <li><a href="ViewMessages.aspx">Inbox</a></li>
+				<li><a href="ComposeMessage.aspx">Compose</a></li>
+				<li><a href="SentMessages.aspx">Sent Messages</a></li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+
+                            <li class="sideli">
+                                <a href="ViewCirculars.aspx">
+                                    <img src="../../images/icons/edocs.png" width="25" height="24" alt="transport" class="homeico" />Circulars<span class="fa arrow"></span></a>
+                               
+                            </li>
+
+                            <li class="sideli">
+                                <a href="#">
+                                    <img src="../../images/icons/help.png" width="25" height="24" alt="library" class="homeico" />Thoughts<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                   <li><a href="SubmitThought.aspx">Submit a thought</a></li>
+				<li><a href="ViewAllThoughts.aspx">View all thoughts</a></li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+
+                            
+
+                            <li class="sideli">
+                                <a href="ChangePassword.aspx">
+                                    <img src="../../images/icons/change.png" width="25" height="24" alt="home" class="homeico" />Change Password<span class="fa arrow"></span></a>
+                                                               <!-- /.nav-second-level -->
+                            </li>
+                             <li class="sideli">
+                                <a href="../ParentLogout.aspx">
+                                    <img src="../../images/icons/logout.png" width="25" height="24" alt="home" class="homeico" />Logout<span class="fa arrow"></span></a>
+                                                               <!-- /.nav-second-level -->
+                            </li>
+                         
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                </div>
+                <!-- /.navbar-static-side -->
+            </nav>
+            <div id="page-wrapper">
+                <div class="graphs">
+                    <div class="xs" style="background-color: #37C464; padding-top: 10px; padding-left: 10px; color: #fff; margin-top: -71px;">
+                        <h5><asp:ContentPlaceHolder ID="Heading" runat="server">
+    </asp:ContentPlaceHolder></h5>
+                       <%-- <h5><a href="#" style="color: #fff; float: right; margin-right: 190px; margin-top: -26px;">Academic Session 2014-2015</a> <a href="#" style="color: #fff; float: right; margin-top: -26px;">Loggin System : Admine</a></h5>--%>
+                        <div class="clearfix"></div>
+                    </div>
+                        
+                    
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                    
+                    <div class="copy" >
+                        <p>Copyright &copy; 2016 Modern. All Rights Reserved | Design by <a href="http://idiary.in/" target="_blank">i-Diary IT Solutions Pvt. Ltd.</a> </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+    </form>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

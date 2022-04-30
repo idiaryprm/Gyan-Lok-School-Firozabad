@@ -1,0 +1,2750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{EFC20B12-6A4A-468A-A768-828C6BB3ED3F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iDiary_V3</RootNamespace>
+    <AssemblyName>iDiary_V3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>iDiary_V3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>iDiary_V3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\Ajex New\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\Pallavi Shukla\Downloads\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Activities.Build" />
+    <Reference Include="Microsoft.Build" />
+    <Reference Include="Microsoft.Build.Conversion.v4.0" />
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebControlCaptcha">
+      <HintPath>..\Reference\WebControlCaptcha.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcademicCalender.aspx" />
+    <Content Include="AcademicSession.aspx" />
+    <Content Include="AcademicSessionMaster.aspx" />
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="AddmissionSlip.aspx" />
+    <Content Include="AdminEntry.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="AdminInbox.aspx" />
+    <Content Include="AllergyMaster.aspx" />
+    <Content Include="AssignFeeBookNo.aspx" />
+    <Content Include="Assignments.aspx" />
+    <Content Include="AssignRollNo.aspx" />
+    <Content Include="AttendanceReport.aspx" />
+    <Content Include="AuthorMaster.aspx" />
+    <Content Include="BackupRecovery.aspx" />
+    <Content Include="Bank.aspx" />
+    <Content Include="BankStudent.aspx" />
+    <Content Include="BloodGroupMaster.aspx" />
+    <Content Include="BoardMaster.aspx" />
+    <Content Include="BookCategoryMaster.aspx" />
+    <Content Include="BookMaster.aspx" />
+    <Content Include="BookStatusMaster.aspx" />
+    <Content Include="BusconveyanceModeMaster.aspx" />
+    <Content Include="BusConveyanceTypeMaster.aspx" />
+    <Content Include="BusCoveyanceFeeConfig.aspx" />
+    <Content Include="BusDetails.aspx" />
+    <Content Include="BusDriverMaster.aspx" />
+    <Content Include="BusFeeCollectionReport.aspx" />
+    <Content Include="BusFeeDeposit.aspx" />
+    <Content Include="BusFeeDueConfig.aspx" />
+    <Content Include="BusFeeDueList.aspx" />
+    <Content Include="BusFeeImport.aspx" />
+    <Content Include="BusHeadTypeConfig.aspx" />
+    <Content Include="BusLocationMaster.aspx" />
+    <Content Include="BusMasterEntry.aspx" />
+    <Content Include="BusRouteAssign.aspx" />
+    <Content Include="BusRouteMaster.aspx" />
+    <Content Include="BusStudentConveyance.aspx" />
+    <Content Include="BusTermMaster.aspx" />
+    <Content Include="BusTypeMaster.aspx" />
+    <Content Include="CasteMaster.aspx" />
+    <Content Include="CategoryMaster.aspx" />
+    <Content Include="Cert_Char.aspx" />
+    <Content Include="Cert_DOB.aspx" />
+    <Content Include="Cert_Fee.aspx" />
+    <Content Include="Cert_Home.aspx" />
+    <Content Include="Cert_TC.aspx" />
+    <Content Include="Cert_TCList.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Circulars.aspx" />
+    <Content Include="CityMaster.aspx" />
+    <Content Include="ClassMaster.aspx" />
+    <Content Include="ClassSecConfig.aspx" />
+    <Content Include="ClassTeacherAssignment.aspx" />
+    <Content Include="ClassTermConfig.aspx" />
+    <Content Include="AssignRegNo.aspx" />
+    <Content Include="ExamAdmitCard.aspx" />
+    <Content Include="ExamDateSheet.aspx" />
+    <Content Include="FeeBankBranchMaster.aspx" />
+    <Content Include="FeeBankMaster.aspx" />
+    <Content Include="CoScholasticSubjectMaster.aspx" />
+    <Content Include="CreateUsers.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\clndr.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\Graphs.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jqvmap.css" />
+    <Content Include="css\lines.css" />
+    <Content Include="css\loginStyle.css" />
+    <Content Include="css\RosterStyle.css" />
+    <Content Include="css\roster\bootstrap.css" />
+    <Content Include="css\roster\bootstrap.js" />
+    <Content Include="css\roster\jquery-1.9.1.min.js" />
+    <Content Include="css\style.css" />
+    <Content Include="css\StyleSheet.css" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="date_time.js" />
+    <Content Include="DepartmentMaster.aspx" />
+    <Content Include="Department_Payroll.aspx" />
+    <Content Include="DescriptiveIndicators.aspx" />
+    <Content Include="DesignationMaster.aspx" />
+    <Content Include="Designation_Payroll.aspx" />
+    <Content Include="DVDMaster.aspx" />
+    <Content Include="EmpAcademicSession.aspx" />
+    <Content Include="EmpAttRoster.aspx" />
+    <Content Include="EmpBankStatement.aspx" />
+    <Content Include="EmpConfigSalary.aspx" />
+    <Content Include="EmpConfigSalaryHeads.aspx" />
+    <Content Include="EmpCreditLeaves.aspx" />
+    <Content Include="EmpGeneratePayBill.aspx" />
+    <Content Include="EmpImportAttendance.aspx" />
+    <Content Include="EmployeeAttendance.aspx" />
+    <Content Include="EmployeeAttendanceReport.aspx" />
+    <Content Include="EmployeeMaster.aspx" />
+    <Content Include="EmployeeSearch.aspx" />
+    <Content Include="EmpMarkLeaves.aspx" />
+    <Content Include="EmpPayrollHome.aspx" />
+    <Content Include="EmpPendingLeaves.aspx" />
+    <Content Include="EmpPhotos\01.jpg" />
+    <Content Include="EmpProcessSalary.aspx" />
+    <Content Include="EmpSalaryHeadStatement.aspx" />
+    <Content Include="EmpSalarySlip.aspx" />
+    <Content Include="EmpUpdateCreditLeaves.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="EventLog.aspx" />
+    <Content Include="ExamAbbreviation.aspx" />
+    <Content Include="ExamActivityMapping.aspx" />
+    <Content Include="ExamAdminHome.aspx" />
+    <Content Include="ExamConfig.aspx" />
+    <Content Include="ExamConfiguration.aspx" />
+    <Content Include="ExamDescriptiveIndicators.aspx" />
+    <Content Include="ExamGradeMapping.aspx" />
+    <Content Include="ExamGradeMaster.aspx" />
+    <Content Include="ExamGroupConfig.aspx" />
+    <Content Include="ExamGroupMaster.aspx" />
+    <Content Include="ExamHome.aspx" />
+    <Content Include="ExamMarksProcessing.aspx" />
+    <Content Include="ExamRemarksMaster.aspx" />
+    <Content Include="ExamSubjectGroupmaster.aspx" />
+    <Content Include="ExamSubjectMapping.aspx" />
+    <Content Include="ExamSubjectMappingImport.aspx" />
+    <Content Include="ExamSubjectMaster.aspx" />
+    <Content Include="ExamSubjectPriority.aspx" />
+    <Content Include="ExamTermConfig.aspx" />
+    <Content Include="ExamTermMaster.aspx" />
+    <Content Include="ExamUserPermissions.aspx" />
+    <Content Include="Exam_MarksEntry.aspx" />
+    <Content Include="Exam_MarksEntryStudent.aspx" />
+    <Content Include="Exam_ReportCard.aspx" />
+    <Content Include="Exam_Reports.aspx" />
+    <Content Include="FeeChallan.aspx" />
+    <Content Include="FeeChqDisHonoured.aspx" />
+    <Content Include="FeeConcessionTypeMaster.aspx" />
+    <Content Include="FeeConfig.aspx" />
+    <Content Include="FeeConfigStudentWise.aspx" />
+    <Content Include="FeeDeposit.aspx" />
+    <Content Include="FeeDueConfig.aspx" />
+    <Content Include="FeeGroupMaster.aspx" />
+    <Content Include="FeeImport.aspx" />
+    <Content Include="FeeOnlineImport.aspx" />
+    <Content Include="FeeReport.aspx" />
+    <Content Include="FeeStudentConcessionConfig.aspx" />
+    <Content Include="FeeTermMaster.aspx" />
+    <Content Include="FeeTypeConfig.aspx" />
+    <Content Include="FeeTypes.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="generateParentLoginIndi.aspx" />
+    <Content Include="GenerateParentLogins.aspx" />
+    <Content Include="GradePayMaster.aspx" />
+    <Content Include="HeadwiseReport.aspx" />
+    <Content Include="HealthCard.aspx" />
+    <Content Include="HouseMaster.aspx" />
+    <Content Include="gview.htm" />
+    <Content Include="iDiaryPanel\Assignments\Tulips.jpg" />
+    <Content Include="iDiaryPanel\Circulars\Hydrangeas.jpg" />
+    <Content Include="iDiaryPanel\css\style.css" />
+    <Content Include="iDiaryPanel\images\appicationbut.gif" />
+    <Content Include="iDiaryPanel\images\ArmyPublicSchool\Army.JPG" />
+    <Content Include="iDiaryPanel\images\ArmyPublicSchool\loginlogo.jpg" />
+    <Content Include="iDiaryPanel\images\ArmyPublicSchool\logo.jpg" />
+    <Content Include="iDiaryPanel\images\arrow.gif" />
+    <Content Include="iDiaryPanel\images\idiarylogo.png" />
+    <Content Include="iDiaryPanel\images\img1.jpg" />
+    <Content Include="iDiaryPanel\images\img2.jpg" />
+    <Content Include="iDiaryPanel\images\img_bg.gif" />
+    <Content Include="iDiaryPanel\images\infotechlogo.gif" />
+    <Content Include="iDiaryPanel\images\loging_but.gif" />
+    <Content Include="iDiaryPanel\images\loging_but.png" />
+    <Content Include="iDiaryPanel\images\loginlogo.jpg" />
+    <Content Include="iDiaryPanel\images\loginlogo.png" />
+    <Content Include="iDiaryPanel\images\login_bg.png" />
+    <Content Include="iDiaryPanel\images\logo.jpg" />
+    <Content Include="iDiaryPanel\images\logo.png" />
+    <Content Include="iDiaryPanel\images\main_bg.gif" />
+    <Content Include="iDiaryPanel\images\qut_bg.gif" />
+    <Content Include="iDiaryPanel\images\scroll.gif" />
+    <Content Include="iDiaryPanel\images\sub_bg.png" />
+    <Content Include="iDiaryPanel\images\teacher1.jpg" />
+    <Content Include="iDiaryPanel\image\arrow1.jpg" />
+    <Content Include="iDiaryPanel\image\bg-sadho.png" />
+    <Content Include="iDiaryPanel\image\bg.jpg" />
+    <Content Include="iDiaryPanel\image\bg.png" />
+    <Content Include="iDiaryPanel\image\big-icon.jpg" />
+    <Content Include="iDiaryPanel\image\com_logo.jpg" />
+    <Content Include="iDiaryPanel\image\filed-bg1.jpg" />
+    <Content Include="iDiaryPanel\image\filed-bg2.jpg" />
+    <Content Include="iDiaryPanel\image\header.jpg" />
+    <Content Include="iDiaryPanel\image\icon.jpg" />
+    <Content Include="iDiaryPanel\image\icon_alumini.png" />
+    <Content Include="iDiaryPanel\image\icon_cal.png" />
+    <Content Include="iDiaryPanel\image\icon_chnage.png" />
+    <Content Include="iDiaryPanel\image\icon_event.png" />
+    <Content Include="iDiaryPanel\image\icon_help.png" />
+    <Content Include="iDiaryPanel\image\icon_home.png" />
+    <Content Include="iDiaryPanel\image\icon_logout.png" />
+    <Content Include="iDiaryPanel\image\line-bg.jpg" />
+    <Content Include="iDiaryPanel\image\line.png" />
+    <Content Include="iDiaryPanel\image\logo-i.jpg" />
+    <Content Include="iDiaryPanel\image\logo-school.jpg" />
+    <Content Include="iDiaryPanel\image\logo.jpg" />
+    <Content Include="iDiaryPanel\image\logo.png" />
+    <Content Include="iDiaryPanel\image\sing-bg.jpg" />
+    <Content Include="iDiaryPanel\image\sing-line.jpg" />
+    <Content Include="iDiaryPanel\image\singup-button.jpg" />
+    <Content Include="iDiaryPanel\image\top-bg.png" />
+    <Content Include="iDiaryPanel\js\scroll.js" />
+    <Content Include="iDiaryPanel\ParentLogin.aspx" />
+    <Content Include="iDiaryPanel\ParentLogout.aspx" />
+    <Content Include="iDiaryPanel\Parent\ApplyLeave.aspx" />
+    <Content Include="iDiaryPanel\Parent\ChangePassword.aspx" />
+    <Content Include="iDiaryPanel\Parent\ChangeProfile.aspx" />
+    <Content Include="iDiaryPanel\Parent\ComposeMessage.aspx" />
+    <Content Include="iDiaryPanel\Parent\FeeHistory.aspx" />
+    <Content Include="iDiaryPanel\Parent\ParentHome.aspx" />
+    <Content Include="iDiaryPanel\Parent\ProgressReport.aspx" />
+    <Content Include="iDiaryPanel\Parent\SentMessages.aspx" />
+    <Content Include="iDiaryPanel\Parent\SubmitThought.aspx" />
+    <Content Include="iDiaryPanel\Parent\UpcomingActivity.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewAcademicCalender.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewAllThoughts.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewAssignments.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewAttendance.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewCirculars.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewClassmates.aspx" />
+    <Content Include="iDiaryPanel\Parent\viewLeave.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewMessages.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewProgressReport.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewSyllabus.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewTeachers.aspx" />
+    <Content Include="iDiaryPanel\Parent\ViewTimeTable.aspx" />
+    <Content Include="iDiaryPanel\Syllabus\Penguins.jpg" />
+    <Content Include="images\arrow-left.png" />
+    <Content Include="images\arrow-right.png" />
+    <Content Include="images\arrow1.jpg" />
+    <Content Include="images\bg-sadho.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\ClassRoomMaster.jpg" />
+    <Content Include="images\cloud.png" />
+    <Content Include="images\DownArrow.jpg" />
+    <Content Include="images\EmpDummy.jpg" />
+    <Content Include="images\filed-bg1.jpg" />
+    <Content Include="images\filed-bg2.jpg" />
+    <Content Include="images\head-bg.jpg" />
+    <Content Include="images\Header_Cert.JPG" />
+    <Content Include="images\icons\admission.png" />
+    <Content Include="images\icons\alumni.png" />
+    <Content Include="images\icons\calculator.png" />
+    <Content Include="images\icons\calender.png" />
+    <Content Include="images\icons\certificate.png" />
+    <Content Include="images\icons\change.png" />
+    <Content Include="images\icons\configurations.png" />
+    <Content Include="images\icons\edocs.png" />
+    <Content Include="images\icons\enquiry.png" />
+    <Content Include="images\icons\examination.png" />
+    <Content Include="images\icons\fee.png" />
+    <Content Include="images\icons\health.png" />
+    <Content Include="images\icons\help.png" />
+    <Content Include="images\icons\home.png" />
+    <Content Include="images\icons\hr.png" />
+    <Content Include="images\icons\library.png" />
+    <Content Include="images\icons\logout.png" />
+    <Content Include="images\icons\messaging.png" />
+    <Content Include="images\icons\report.png" />
+    <Content Include="images\icons\student.png" />
+    <Content Include="images\icons\teachers.png" />
+    <Content Include="images\icons\timetable.png" />
+    <Content Include="images\icons\training.png" />
+    <Content Include="images\icons\transport.png" />
+    <Content Include="images\line.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\Loginlogo.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\Refresh.jpg" />
+    <Content Include="images\SchoolLogo.png" />
+    <Content Include="images\sing-bg.jpg" />
+    <Content Include="images\sing-line.jpg" />
+    <Content Include="images\singup-button.jpg" />
+    <Content Include="images\StudentDummy.jpg" />
+    <Content Include="images\top-bg.png" />
+    <Content Include="images\UpArrow.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="Inventory.aspx" />
+    <Content Include="InventoryLedger.aspx" />
+    <Content Include="InventoryStoreMaster.aspx" />
+    <Content Include="InventoryVendors.aspx" />
+    <Content Include="IssueBook.aspx" />
+    <Content Include="itemMaster.aspx" />
+    <Content Include="itemUnitMaster.aspx" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\Chart.js" />
+    <Content Include="js\clndr.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\d3.v3.js" />
+    <Content Include="js\jquery-1.10.2.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.vmap.js" />
+    <Content Include="js\jquery.vmap.sampledata.js" />
+    <Content Include="js\jquery.vmap.world.js" />
+    <Content Include="js\metisMenu.min.js" />
+    <Content Include="js\moment-2.2.1.js" />
+    <Content Include="js\rickshaw.js" />
+    <Content Include="js\site.js" />
+    <Content Include="js\underscore-min.js" />
+    <Content Include="LanguageMaster.aspx" />
+    <Content Include="LeaveMaster.aspx" />
+    <Content Include="LessonPlan.aspx" />
+    <Content Include="LibraryBarCodeGeneration.aspx" />
+    <Content Include="LibraryBookHistory.aspx" />
+    <Content Include="LibraryFineConfig.aspx" />
+    <Content Include="LibraryIssueReturnReport.aspx" />
+    <Content Include="LibraryMembership.aspx" />
+    <Content Include="libraryReports.aspx" />
+    <Content Include="LibrarySearch.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="MagazineMaster.aspx" />
+    <Content Include="ManageAdmissionDues.aspx" />
+    <Content Include="ManageDocuments.aspx" />
+    <Content Include="MessageTemplateMaster.aspx" />
+    <Content Include="Nationality.aspx" />
+    <Content Include="NewsPaperMaster.aspx" />
+    <Content Include="NewsPaperReport.aspx" />
+    <Content Include="NewsPaperTransact.aspx" />
+    <Content Include="OccupationMaster.aspx" />
+    <Content Include="ParamsMaster.aspx" />
+    <Content Include="PayScaleMaster.aspx" />
+    <Content Include="PettyCashCollectionReport.aspx" />
+    <Content Include="PettyCashHeads.aspx" />
+    <Content Include="PettyCashJournalEntry.aspx" />
+    <Content Include="PettyCashStatement.aspx" />
+    <Content Include="PettyCashTransactions.aspx" />
+    <Content Include="PettyStatement.aspx" />
+    <Content Include="Promotion.aspx" />
+    <Content Include="PublisherMaster.aspx" />
+    <Content Include="Qualifications.aspx" />
+    <Content Include="RackMaster.aspx" />
+    <Content Include="ReligionMaster.aspx" />
+    <Content Include="RemarksMaster.aspx" />
+    <Content Include="SalaryHeadMaster.aspx" />
+    <Content Include="SchoolInfo.aspx" />
+    <Content Include="SearchDocument.aspx" />
+    <Content Include="SectionMaster.aspx" />
+    <Content Include="SeeDocoment.aspx" />
+    <Content Include="SendSMS.aspx" />
+    <Content Include="Set Leave Timeframe.aspx" />
+    <Content Include="SeverityMaster.aspx" />
+    <Content Include="SMSConfiguration.aspx" />
+    <Content Include="SMSReport.aspx" />
+    <Content Include="SMSTemplates.aspx" />
+    <Content Include="StateMaster.aspx" />
+    <Content Include="StatusMaster.aspx" />
+    <Content Include="Status_Payroll.aspx" />
+    <Content Include="StockRegister.aspx" />
+    <Content Include="StockSummary.aspx" />
+    <Content Include="StudentAnalysis.aspx" />
+    <Content Include="StudentAttendance.aspx" />
+    <Content Include="StudentClassList.aspx" />
+    <Content Include="StudentEnquiry.aspx" />
+    <Content Include="StudentEnquiryCompare.aspx" />
+    <Content Include="StudentEnquiryConfirm.aspx" />
+    <Content Include="StudentEnquiryReport.aspx" />
+    <Content Include="StudentFatherPromotion.aspx" />
+    <Content Include="StudentICard.aspx" />
+    <Content Include="StudentLeaveReport.aspx" />
+    <Content Include="StudentMaster.aspx" />
+    <Content Include="StudentNotes.aspx" />
+    <Content Include="StudentSearch.aspx" />
+    <Content Include="StudentSiblings.aspx" />
+    <Content Include="StudentStrength.aspx" />
+    <Content Include="Student_Subsec.aspx" />
+    <Content Include="StudyMediumMaster.aspx" />
+    <Content Include="stylesheet.css" />
+    <Content Include="SubjectMapping.aspx" />
+    <Content Include="SubjectMappingImport.aspx" />
+    <Content Include="SubjectMaster.aspx" />
+    <Content Include="SubjectPriority.aspx" />
+    <Content Include="SubSectionMaster.aspx" />
+    <Content Include="Syllabus.aspx" />
+    <Content Include="Tabs.aspx" />
+    <Content Include="TeacherInbox.aspx" />
+    <Content Include="TeacherNotes.aspx" />
+    <Content Include="TeacherNotesReport.aspx" />
+    <Content Include="TeacherSubjectMap.aspx" />
+    <Content Include="Test.aspx" />
+    <Content Include="TimeTable.aspx" />
+    <Content Include="TimeTableToday.aspx" />
+    <Content Include="TransportMaster.aspx" />
+    <Content Include="TT1.aspx" />
+    <Content Include="TTConfig.aspx" />
+    <Content Include="TTGenerate.aspx" />
+    <Content Include="TTManual.aspx" />
+    <Content Include="UpcomingActivities.aspx" />
+    <Content Include="UserPermissions.aspx" />
+    <Content Include="VaccinationMaster.aspx" />
+    <Content Include="VenderMaster.aspx" />
+    <Content Include="ViewLeaveRecords.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcademicCalender.aspx.designer.vb">
+      <DependentUpon>AcademicCalender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicCalender.aspx.vb">
+      <DependentUpon>AcademicCalender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcademicSession.aspx.designer.vb">
+      <DependentUpon>AcademicSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicSession.aspx.vb">
+      <DependentUpon>AcademicSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcademicSessionMaster.aspx.designer.vb">
+      <DependentUpon>AcademicSessionMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcademicSessionMaster.aspx.vb">
+      <DependentUpon>AcademicSessionMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.vb">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.vb">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddmissionSlip.aspx.designer.vb">
+      <DependentUpon>AddmissionSlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddmissionSlip.aspx.vb">
+      <DependentUpon>AddmissionSlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEntry.aspx.designer.vb">
+      <DependentUpon>AdminEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEntry.aspx.vb">
+      <DependentUpon>AdminEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.vb">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.vb">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminInbox.aspx.designer.vb">
+      <DependentUpon>AdminInbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInbox.aspx.vb">
+      <DependentUpon>AdminInbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaster.master.designer.vb">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMaster.master.vb">
+      <DependentUpon>AdminMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllergyMaster.aspx.designer.vb">
+      <DependentUpon>AllergyMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllergyMaster.aspx.vb">
+      <DependentUpon>AllergyMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\clsLibrary.vb" />
+    <Compile Include="App_Code\Common.vb" />
+    <Compile Include="App_Code\AdmiDiary.vb" />
+    <Compile Include="App_Code\Crypto.vb" />
+    <Compile Include="App_Code\iDiary.vb" />
+    <Compile Include="App_Code\iDiaryV3_Inventory.vb" />
+    <Compile Include="App_Code\iDiary_Date.vb" />
+    <Compile Include="App_Code\iDiary_Exam.vb" />
+    <Compile Include="App_Code\iDiary_Fee.vb" />
+    <Compile Include="App_Code\iDiary_Security.vb" />
+    <Compile Include="App_Code\iDiary_Student.vb" />
+    <Compile Include="App_Code\iDiary_TT.vb" />
+    <Compile Include="App_Code\TreeViewState.vb" />
+    <Compile Include="App_Code\Validation.vb" />
+    <Compile Include="AssignFeeBookNo.aspx.designer.vb">
+      <DependentUpon>AssignFeeBookNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignFeeBookNo.aspx.vb">
+      <DependentUpon>AssignFeeBookNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assignments.aspx.designer.vb">
+      <DependentUpon>Assignments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assignments.aspx.vb">
+      <DependentUpon>Assignments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignRollNo.aspx.designer.vb">
+      <DependentUpon>AssignRollNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignRollNo.aspx.vb">
+      <DependentUpon>AssignRollNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceReport.aspx.designer.vb">
+      <DependentUpon>AttendanceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceReport.aspx.vb">
+      <DependentUpon>AttendanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthorMaster.aspx.designer.vb">
+      <DependentUpon>AuthorMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorMaster.aspx.vb">
+      <DependentUpon>AuthorMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackupRecovery.aspx.designer.vb">
+      <DependentUpon>BackupRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackupRecovery.aspx.vb">
+      <DependentUpon>BackupRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bank.aspx.designer.vb">
+      <DependentUpon>Bank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bank.aspx.vb">
+      <DependentUpon>Bank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankStudent.aspx.designer.vb">
+      <DependentUpon>BankStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BankStudent.aspx.vb">
+      <DependentUpon>BankStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BloodGroupMaster.aspx.designer.vb">
+      <DependentUpon>BloodGroupMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BloodGroupMaster.aspx.vb">
+      <DependentUpon>BloodGroupMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BoardMaster.aspx.designer.vb">
+      <DependentUpon>BoardMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BoardMaster.aspx.vb">
+      <DependentUpon>BoardMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookCategoryMaster.aspx.designer.vb">
+      <DependentUpon>BookCategoryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookCategoryMaster.aspx.vb">
+      <DependentUpon>BookCategoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookMaster.aspx.designer.vb">
+      <DependentUpon>BookMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookMaster.aspx.vb">
+      <DependentUpon>BookMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookStatusMaster.aspx.designer.vb">
+      <DependentUpon>BookStatusMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookStatusMaster.aspx.vb">
+      <DependentUpon>BookStatusMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusconveyanceModeMaster.aspx.designer.vb">
+      <DependentUpon>BusconveyanceModeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusconveyanceModeMaster.aspx.vb">
+      <DependentUpon>BusconveyanceModeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusConveyanceTypeMaster.aspx.designer.vb">
+      <DependentUpon>BusConveyanceTypeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusConveyanceTypeMaster.aspx.vb">
+      <DependentUpon>BusConveyanceTypeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusCoveyanceFeeConfig.aspx.designer.vb">
+      <DependentUpon>BusCoveyanceFeeConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusCoveyanceFeeConfig.aspx.vb">
+      <DependentUpon>BusCoveyanceFeeConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusDetails.aspx.designer.vb">
+      <DependentUpon>BusDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusDetails.aspx.vb">
+      <DependentUpon>BusDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusDriverMaster.aspx.designer.vb">
+      <DependentUpon>BusDriverMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusDriverMaster.aspx.vb">
+      <DependentUpon>BusDriverMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusFeeCollectionReport.aspx.designer.vb">
+      <DependentUpon>BusFeeCollectionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusFeeCollectionReport.aspx.vb">
+      <DependentUpon>BusFeeCollectionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusFeeDeposit.aspx.designer.vb">
+      <DependentUpon>BusFeeDeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusFeeDeposit.aspx.vb">
+      <DependentUpon>BusFeeDeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusFeeDueConfig.aspx.designer.vb">
+      <DependentUpon>BusFeeDueConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusFeeDueConfig.aspx.vb">
+      <DependentUpon>BusFeeDueConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusFeeDueList.aspx.designer.vb">
+      <DependentUpon>BusFeeDueList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusFeeDueList.aspx.vb">
+      <DependentUpon>BusFeeDueList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusFeeImport.aspx.designer.vb">
+      <DependentUpon>BusFeeImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusFeeImport.aspx.vb">
+      <DependentUpon>BusFeeImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusHeadTypeConfig.aspx.designer.vb">
+      <DependentUpon>BusHeadTypeConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusHeadTypeConfig.aspx.vb">
+      <DependentUpon>BusHeadTypeConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusLocationMaster.aspx.designer.vb">
+      <DependentUpon>BusLocationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusLocationMaster.aspx.vb">
+      <DependentUpon>BusLocationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusMaster.master.designer.vb">
+      <DependentUpon>BusMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="BusMaster.master.vb">
+      <DependentUpon>BusMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusMasterEntry.aspx.designer.vb">
+      <DependentUpon>BusMasterEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusMasterEntry.aspx.vb">
+      <DependentUpon>BusMasterEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusRouteAssign.aspx.designer.vb">
+      <DependentUpon>BusRouteAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusRouteAssign.aspx.vb">
+      <DependentUpon>BusRouteAssign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusRouteMaster.aspx.designer.vb">
+      <DependentUpon>BusRouteMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusRouteMaster.aspx.vb">
+      <DependentUpon>BusRouteMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusStudentConveyance.aspx.designer.vb">
+      <DependentUpon>BusStudentConveyance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusStudentConveyance.aspx.vb">
+      <DependentUpon>BusStudentConveyance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusTermMaster.aspx.designer.vb">
+      <DependentUpon>BusTermMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusTermMaster.aspx.vb">
+      <DependentUpon>BusTermMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusTypeMaster.aspx.designer.vb">
+      <DependentUpon>BusTypeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusTypeMaster.aspx.vb">
+      <DependentUpon>BusTypeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CasteMaster.aspx.designer.vb">
+      <DependentUpon>CasteMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CasteMaster.aspx.vb">
+      <DependentUpon>CasteMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoryMaster.aspx.designer.vb">
+      <DependentUpon>CategoryMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryMaster.aspx.vb">
+      <DependentUpon>CategoryMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Certificates.master.designer.vb">
+      <DependentUpon>Certificates.master</DependentUpon>
+    </Compile>
+    <Compile Include="Certificates.master.vb">
+      <DependentUpon>Certificates.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cert_Char.aspx.designer.vb">
+      <DependentUpon>Cert_Char.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cert_Char.aspx.vb">
+      <DependentUpon>Cert_Char.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cert_DOB.aspx.designer.vb">
+      <DependentUpon>Cert_DOB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cert_DOB.aspx.vb">
+      <DependentUpon>Cert_DOB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cert_Fee.aspx.designer.vb">
+      <DependentUpon>Cert_Fee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cert_Fee.aspx.vb">
+      <DependentUpon>Cert_Fee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cert_Home.aspx.designer.vb">
+      <DependentUpon>Cert_Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cert_Home.aspx.vb">
+      <DependentUpon>Cert_Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cert_TC.aspx.designer.vb">
+      <DependentUpon>Cert_TC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cert_TC.aspx.vb">
+      <DependentUpon>Cert_TC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cert_TCList.aspx.designer.vb">
+      <DependentUpon>Cert_TCList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cert_TCList.aspx.vb">
+      <DependentUpon>Cert_TCList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Circulars.aspx.designer.vb">
+      <DependentUpon>Circulars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Circulars.aspx.vb">
+      <DependentUpon>Circulars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CityMaster.aspx.designer.vb">
+      <DependentUpon>CityMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CityMaster.aspx.vb">
+      <DependentUpon>CityMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassMaster.aspx.designer.vb">
+      <DependentUpon>ClassMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMaster.aspx.vb">
+      <DependentUpon>ClassMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassSecConfig.aspx.designer.vb">
+      <DependentUpon>ClassSecConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassSecConfig.aspx.vb">
+      <DependentUpon>ClassSecConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassTeacherAssignment.aspx.designer.vb">
+      <DependentUpon>ClassTeacherAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassTeacherAssignment.aspx.vb">
+      <DependentUpon>ClassTeacherAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassTermConfig.aspx.designer.vb">
+      <DependentUpon>ClassTermConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassTermConfig.aspx.vb">
+      <DependentUpon>ClassTermConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignRegNo.aspx.designer.vb">
+      <DependentUpon>AssignRegNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignRegNo.aspx.vb">
+      <DependentUpon>AssignRegNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamAdmitCard.aspx.designer.vb">
+      <DependentUpon>ExamAdmitCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamAdmitCard.aspx.vb">
+      <DependentUpon>ExamAdmitCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamDateSheet.aspx.designer.vb">
+      <DependentUpon>ExamDateSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamDateSheet.aspx.vb">
+      <DependentUpon>ExamDateSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeBankBranchMaster.aspx.designer.vb">
+      <DependentUpon>FeeBankBranchMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeBankBranchMaster.aspx.vb">
+      <DependentUpon>FeeBankBranchMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeBankMaster.aspx.designer.vb">
+      <DependentUpon>FeeBankMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeBankMaster.aspx.vb">
+      <DependentUpon>FeeBankMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoScholasticSubjectMaster.aspx.designer.vb">
+      <DependentUpon>CoScholasticSubjectMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoScholasticSubjectMaster.aspx.vb">
+      <DependentUpon>CoScholasticSubjectMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateUsers.aspx.designer.vb">
+      <DependentUpon>CreateUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUsers.aspx.vb">
+      <DependentUpon>CreateUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.vb">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.vb">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentMaster.aspx.designer.vb">
+      <DependentUpon>DepartmentMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentMaster.aspx.vb">
+      <DependentUpon>DepartmentMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department_Payroll.aspx.designer.vb">
+      <DependentUpon>Department_Payroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department_Payroll.aspx.vb">
+      <DependentUpon>Department_Payroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DescriptiveIndicators.aspx.designer.vb">
+      <DependentUpon>DescriptiveIndicators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DescriptiveIndicators.aspx.vb">
+      <DependentUpon>DescriptiveIndicators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignationMaster.aspx.designer.vb">
+      <DependentUpon>DesignationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignationMaster.aspx.vb">
+      <DependentUpon>DesignationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designation_Payroll.aspx.designer.vb">
+      <DependentUpon>Designation_Payroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designation_Payroll.aspx.vb">
+      <DependentUpon>Designation_Payroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DVDMaster.aspx.designer.vb">
+      <DependentUpon>DVDMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DVDMaster.aspx.vb">
+      <DependentUpon>DVDMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpAcademicSession.aspx.designer.vb">
+      <DependentUpon>EmpAcademicSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpAcademicSession.aspx.vb">
+      <DependentUpon>EmpAcademicSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpAttRoster.aspx.designer.vb">
+      <DependentUpon>EmpAttRoster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpAttRoster.aspx.vb">
+      <DependentUpon>EmpAttRoster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpBankStatement.aspx.designer.vb">
+      <DependentUpon>EmpBankStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpBankStatement.aspx.vb">
+      <DependentUpon>EmpBankStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpConfigSalary.aspx.designer.vb">
+      <DependentUpon>EmpConfigSalary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpConfigSalary.aspx.vb">
+      <DependentUpon>EmpConfigSalary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpConfigSalaryHeads.aspx.designer.vb">
+      <DependentUpon>EmpConfigSalaryHeads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpConfigSalaryHeads.aspx.vb">
+      <DependentUpon>EmpConfigSalaryHeads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpCreditLeaves.aspx.designer.vb">
+      <DependentUpon>EmpCreditLeaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpCreditLeaves.aspx.vb">
+      <DependentUpon>EmpCreditLeaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpGeneratePayBill.aspx.designer.vb">
+      <DependentUpon>EmpGeneratePayBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpGeneratePayBill.aspx.vb">
+      <DependentUpon>EmpGeneratePayBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpImportAttendance.aspx.designer.vb">
+      <DependentUpon>EmpImportAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpImportAttendance.aspx.vb">
+      <DependentUpon>EmpImportAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeAttendance.aspx.designer.vb">
+      <DependentUpon>EmployeeAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAttendance.aspx.vb">
+      <DependentUpon>EmployeeAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeAttendanceReport.aspx.designer.vb">
+      <DependentUpon>EmployeeAttendanceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAttendanceReport.aspx.vb">
+      <DependentUpon>EmployeeAttendanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeMaster.aspx.designer.vb">
+      <DependentUpon>EmployeeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMaster.aspx.vb">
+      <DependentUpon>EmployeeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeSearch.aspx.designer.vb">
+      <DependentUpon>EmployeeSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSearch.aspx.vb">
+      <DependentUpon>EmployeeSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpMarkLeaves.aspx.designer.vb">
+      <DependentUpon>EmpMarkLeaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpMarkLeaves.aspx.vb">
+      <DependentUpon>EmpMarkLeaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpPayrollHome.aspx.designer.vb">
+      <DependentUpon>EmpPayrollHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpPayrollHome.aspx.vb">
+      <DependentUpon>EmpPayrollHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpPendingLeaves.aspx.designer.vb">
+      <DependentUpon>EmpPendingLeaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpPendingLeaves.aspx.vb">
+      <DependentUpon>EmpPendingLeaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpProcessSalary.aspx.designer.vb">
+      <DependentUpon>EmpProcessSalary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpProcessSalary.aspx.vb">
+      <DependentUpon>EmpProcessSalary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpSalaryHeadStatement.aspx.designer.vb">
+      <DependentUpon>EmpSalaryHeadStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpSalaryHeadStatement.aspx.vb">
+      <DependentUpon>EmpSalaryHeadStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpSalarySlip.aspx.designer.vb">
+      <DependentUpon>EmpSalarySlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpSalarySlip.aspx.vb">
+      <DependentUpon>EmpSalarySlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpUpdateCreditLeaves.aspx.designer.vb">
+      <DependentUpon>EmpUpdateCreditLeaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpUpdateCreditLeaves.aspx.vb">
+      <DependentUpon>EmpUpdateCreditLeaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.vb">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventLog.aspx.designer.vb">
+      <DependentUpon>EventLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventLog.aspx.vb">
+      <DependentUpon>EventLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamAbbreviation.aspx.designer.vb">
+      <DependentUpon>ExamAbbreviation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamAbbreviation.aspx.vb">
+      <DependentUpon>ExamAbbreviation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamActivityMapping.aspx.designer.vb">
+      <DependentUpon>ExamActivityMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamActivityMapping.aspx.vb">
+      <DependentUpon>ExamActivityMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamAdminHome.aspx.designer.vb">
+      <DependentUpon>ExamAdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamAdminHome.aspx.vb">
+      <DependentUpon>ExamAdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamAdminMasterPage.Master.designer.vb">
+      <DependentUpon>ExamAdminMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ExamAdminMasterPage.Master.vb">
+      <DependentUpon>ExamAdminMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamConfig.aspx.designer.vb">
+      <DependentUpon>ExamConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamConfig.aspx.vb">
+      <DependentUpon>ExamConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamConfiguration.aspx.designer.vb">
+      <DependentUpon>ExamConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamConfiguration.aspx.vb">
+      <DependentUpon>ExamConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamDescriptiveIndicators.aspx.designer.vb">
+      <DependentUpon>ExamDescriptiveIndicators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamDescriptiveIndicators.aspx.vb">
+      <DependentUpon>ExamDescriptiveIndicators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamGradeMapping.aspx.designer.vb">
+      <DependentUpon>ExamGradeMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamGradeMapping.aspx.vb">
+      <DependentUpon>ExamGradeMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamGradeMaster.aspx.designer.vb">
+      <DependentUpon>ExamGradeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamGradeMaster.aspx.vb">
+      <DependentUpon>ExamGradeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamGroupConfig.aspx.designer.vb">
+      <DependentUpon>ExamGroupConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamGroupConfig.aspx.vb">
+      <DependentUpon>ExamGroupConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamGroupMaster.aspx.designer.vb">
+      <DependentUpon>ExamGroupMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamGroupMaster.aspx.vb">
+      <DependentUpon>ExamGroupMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamHome.aspx.designer.vb">
+      <DependentUpon>ExamHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamHome.aspx.vb">
+      <DependentUpon>ExamHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamMarksProcessing.aspx.designer.vb">
+      <DependentUpon>ExamMarksProcessing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamMarksProcessing.aspx.vb">
+      <DependentUpon>ExamMarksProcessing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamMasterPage.Master.designer.vb">
+      <DependentUpon>ExamMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ExamMasterPage.Master.vb">
+      <DependentUpon>ExamMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamRemarksMaster.aspx.designer.vb">
+      <DependentUpon>ExamRemarksMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamRemarksMaster.aspx.vb">
+      <DependentUpon>ExamRemarksMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamSubjectGroupmaster.aspx.designer.vb">
+      <DependentUpon>ExamSubjectGroupmaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamSubjectGroupmaster.aspx.vb">
+      <DependentUpon>ExamSubjectGroupmaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamSubjectMapping.aspx.designer.vb">
+      <DependentUpon>ExamSubjectMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamSubjectMapping.aspx.vb">
+      <DependentUpon>ExamSubjectMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamSubjectMappingImport.aspx.designer.vb">
+      <DependentUpon>ExamSubjectMappingImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamSubjectMappingImport.aspx.vb">
+      <DependentUpon>ExamSubjectMappingImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamSubjectMaster.aspx.designer.vb">
+      <DependentUpon>ExamSubjectMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamSubjectMaster.aspx.vb">
+      <DependentUpon>ExamSubjectMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamSubjectPriority.aspx.designer.vb">
+      <DependentUpon>ExamSubjectPriority.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamSubjectPriority.aspx.vb">
+      <DependentUpon>ExamSubjectPriority.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamTermConfig.aspx.designer.vb">
+      <DependentUpon>ExamTermConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamTermConfig.aspx.vb">
+      <DependentUpon>ExamTermConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamTermMaster.aspx.designer.vb">
+      <DependentUpon>ExamTermMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamTermMaster.aspx.vb">
+      <DependentUpon>ExamTermMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamUserPermissions.aspx.designer.vb">
+      <DependentUpon>ExamUserPermissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamUserPermissions.aspx.vb">
+      <DependentUpon>ExamUserPermissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam_MarksEntry.aspx.designer.vb">
+      <DependentUpon>Exam_MarksEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_MarksEntry.aspx.vb">
+      <DependentUpon>Exam_MarksEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam_MarksEntryStudent.aspx.designer.vb">
+      <DependentUpon>Exam_MarksEntryStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_MarksEntryStudent.aspx.vb">
+      <DependentUpon>Exam_MarksEntryStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam_ReportCard.aspx.designer.vb">
+      <DependentUpon>Exam_ReportCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_ReportCard.aspx.vb">
+      <DependentUpon>Exam_ReportCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam_Reports.aspx.designer.vb">
+      <DependentUpon>Exam_Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_Reports.aspx.vb">
+      <DependentUpon>Exam_Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeChallan.aspx.designer.vb">
+      <DependentUpon>FeeChallan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeChallan.aspx.vb">
+      <DependentUpon>FeeChallan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeChqDisHonoured.aspx.designer.vb">
+      <DependentUpon>FeeChqDisHonoured.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeChqDisHonoured.aspx.vb">
+      <DependentUpon>FeeChqDisHonoured.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeConcessionTypeMaster.aspx.designer.vb">
+      <DependentUpon>FeeConcessionTypeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeConcessionTypeMaster.aspx.vb">
+      <DependentUpon>FeeConcessionTypeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeConfig.aspx.designer.vb">
+      <DependentUpon>FeeConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeConfig.aspx.vb">
+      <DependentUpon>FeeConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeConfigStudentWise.aspx.designer.vb">
+      <DependentUpon>FeeConfigStudentWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeConfigStudentWise.aspx.vb">
+      <DependentUpon>FeeConfigStudentWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeDeposit.aspx.designer.vb">
+      <DependentUpon>FeeDeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeDeposit.aspx.vb">
+      <DependentUpon>FeeDeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeDueConfig.aspx.designer.vb">
+      <DependentUpon>FeeDueConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeDueConfig.aspx.vb">
+      <DependentUpon>FeeDueConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeGroupMaster.aspx.designer.vb">
+      <DependentUpon>FeeGroupMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeGroupMaster.aspx.vb">
+      <DependentUpon>FeeGroupMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeImport.aspx.designer.vb">
+      <DependentUpon>FeeImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeImport.aspx.vb">
+      <DependentUpon>FeeImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeMasterPage.master.designer.vb">
+      <DependentUpon>FeeMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="FeeMasterPage.master.vb">
+      <DependentUpon>FeeMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeOnlineImport.aspx.designer.vb">
+      <DependentUpon>FeeOnlineImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeOnlineImport.aspx.vb">
+      <DependentUpon>FeeOnlineImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeReport.aspx.designer.vb">
+      <DependentUpon>FeeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeReport.aspx.vb">
+      <DependentUpon>FeeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeStudentConcessionConfig.aspx.designer.vb">
+      <DependentUpon>FeeStudentConcessionConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeStudentConcessionConfig.aspx.vb">
+      <DependentUpon>FeeStudentConcessionConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeTermMaster.aspx.designer.vb">
+      <DependentUpon>FeeTermMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeTermMaster.aspx.vb">
+      <DependentUpon>FeeTermMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeTypeConfig.aspx.designer.vb">
+      <DependentUpon>FeeTypeConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeTypeConfig.aspx.vb">
+      <DependentUpon>FeeTypeConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeTypes.aspx.designer.vb">
+      <DependentUpon>FeeTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeTypes.aspx.vb">
+      <DependentUpon>FeeTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="generateParentLoginIndi.aspx.designer.vb">
+      <DependentUpon>generateParentLoginIndi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generateParentLoginIndi.aspx.vb">
+      <DependentUpon>generateParentLoginIndi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerateParentLogins.aspx.designer.vb">
+      <DependentUpon>GenerateParentLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateParentLogins.aspx.vb">
+      <DependentUpon>GenerateParentLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GradePayMaster.aspx.designer.vb">
+      <DependentUpon>GradePayMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GradePayMaster.aspx.vb">
+      <DependentUpon>GradePayMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HeadwiseReport.aspx.designer.vb">
+      <DependentUpon>HeadwiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HeadwiseReport.aspx.vb">
+      <DependentUpon>HeadwiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthCard.aspx.designer.vb">
+      <DependentUpon>HealthCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthCard.aspx.vb">
+      <DependentUpon>HealthCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HouseMaster.aspx.designer.vb">
+      <DependentUpon>HouseMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HouseMaster.aspx.vb">
+      <DependentUpon>HouseMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>iDiaryDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\App_Code\Class1.vb" />
+    <Compile Include="iDiaryPanel\App_Code\MyCommonFunctions.vb" />
+    <Compile Include="iDiaryPanel\ParentLogin.aspx.designer.vb">
+      <DependentUpon>ParentLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\ParentLogin.aspx.vb">
+      <DependentUpon>ParentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\ParentLogout.aspx.designer.vb">
+      <DependentUpon>ParentLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\ParentLogout.aspx.vb">
+      <DependentUpon>ParentLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ApplyLeave.aspx.designer.vb">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ApplyLeave.aspx.vb">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ChangeProfile.aspx.designer.vb">
+      <DependentUpon>ChangeProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ChangeProfile.aspx.vb">
+      <DependentUpon>ChangeProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ComposeMessage.aspx.designer.vb">
+      <DependentUpon>ComposeMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ComposeMessage.aspx.vb">
+      <DependentUpon>ComposeMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\FeeHistory.aspx.designer.vb">
+      <DependentUpon>FeeHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\FeeHistory.aspx.vb">
+      <DependentUpon>FeeHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ParentHome.aspx.designer.vb">
+      <DependentUpon>ParentHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ParentHome.aspx.vb">
+      <DependentUpon>ParentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ParentMaster.master.designer.vb">
+      <DependentUpon>ParentMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ParentMaster.master.vb">
+      <DependentUpon>ParentMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ProgressReport.aspx.designer.vb">
+      <DependentUpon>ProgressReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ProgressReport.aspx.vb">
+      <DependentUpon>ProgressReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\SentMessages.aspx.designer.vb">
+      <DependentUpon>SentMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\SentMessages.aspx.vb">
+      <DependentUpon>SentMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\SubmitThought.aspx.designer.vb">
+      <DependentUpon>SubmitThought.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\SubmitThought.aspx.vb">
+      <DependentUpon>SubmitThought.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\UpcomingActivity.aspx.designer.vb">
+      <DependentUpon>UpcomingActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\UpcomingActivity.aspx.vb">
+      <DependentUpon>UpcomingActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewAcademicCalender.aspx.designer.vb">
+      <DependentUpon>ViewAcademicCalender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewAcademicCalender.aspx.vb">
+      <DependentUpon>ViewAcademicCalender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewAllThoughts.aspx.designer.vb">
+      <DependentUpon>ViewAllThoughts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewAllThoughts.aspx.vb">
+      <DependentUpon>ViewAllThoughts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewAssignments.aspx.designer.vb">
+      <DependentUpon>ViewAssignments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewAssignments.aspx.vb">
+      <DependentUpon>ViewAssignments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewAttendance.aspx.designer.vb">
+      <DependentUpon>ViewAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewAttendance.aspx.vb">
+      <DependentUpon>ViewAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewCirculars.aspx.designer.vb">
+      <DependentUpon>ViewCirculars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewCirculars.aspx.vb">
+      <DependentUpon>ViewCirculars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewClassmates.aspx.designer.vb">
+      <DependentUpon>ViewClassmates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewClassmates.aspx.vb">
+      <DependentUpon>ViewClassmates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\viewLeave.aspx.designer.vb">
+      <DependentUpon>viewLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\viewLeave.aspx.vb">
+      <DependentUpon>viewLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewMessages.aspx.designer.vb">
+      <DependentUpon>ViewMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewMessages.aspx.vb">
+      <DependentUpon>ViewMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewProgressReport.aspx.designer.vb">
+      <DependentUpon>ViewProgressReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewProgressReport.aspx.vb">
+      <DependentUpon>ViewProgressReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewSyllabus.aspx.designer.vb">
+      <DependentUpon>ViewSyllabus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewSyllabus.aspx.vb">
+      <DependentUpon>ViewSyllabus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewTeachers.aspx.designer.vb">
+      <DependentUpon>ViewTeachers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewTeachers.aspx.vb">
+      <DependentUpon>ViewTeachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewTimeTable.aspx.designer.vb">
+      <DependentUpon>ViewTimeTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryPanel\Parent\ViewTimeTable.aspx.vb">
+      <DependentUpon>ViewTimeTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iDiaryV3_GyanLokDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>iDiaryV3_GyanLokDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="iDiaryV3_GyanLokDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>iDiaryV3_GyanLokDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.designer.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.vb">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory.aspx.designer.vb">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.aspx.vb">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryLedger.aspx.designer.vb">
+      <DependentUpon>InventoryLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryLedger.aspx.vb">
+      <DependentUpon>InventoryLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryStoreMaster.aspx.designer.vb">
+      <DependentUpon>InventoryStoreMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryStoreMaster.aspx.vb">
+      <DependentUpon>InventoryStoreMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryVendors.aspx.designer.vb">
+      <DependentUpon>InventoryVendors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryVendors.aspx.vb">
+      <DependentUpon>InventoryVendors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueBook.aspx.designer.vb">
+      <DependentUpon>IssueBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBook.aspx.vb">
+      <DependentUpon>IssueBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueBookMaster.master.designer.vb">
+      <DependentUpon>IssueBookMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="IssueBookMaster.master.vb">
+      <DependentUpon>IssueBookMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="itemMaster.aspx.designer.vb">
+      <DependentUpon>itemMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="itemMaster.aspx.vb">
+      <DependentUpon>itemMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="itemUnitMaster.aspx.designer.vb">
+      <DependentUpon>itemUnitMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="itemUnitMaster.aspx.vb">
+      <DependentUpon>itemUnitMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LanguageMaster.aspx.designer.vb">
+      <DependentUpon>LanguageMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LanguageMaster.aspx.vb">
+      <DependentUpon>LanguageMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveMaster.aspx.designer.vb">
+      <DependentUpon>LeaveMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveMaster.aspx.vb">
+      <DependentUpon>LeaveMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LessonPlan.aspx.designer.vb">
+      <DependentUpon>LessonPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LessonPlan.aspx.vb">
+      <DependentUpon>LessonPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryBarCodeGeneration.aspx.designer.vb">
+      <DependentUpon>LibraryBarCodeGeneration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryBarCodeGeneration.aspx.vb">
+      <DependentUpon>LibraryBarCodeGeneration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryBookHistory.aspx.designer.vb">
+      <DependentUpon>LibraryBookHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryBookHistory.aspx.vb">
+      <DependentUpon>LibraryBookHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryFineConfig.aspx.designer.vb">
+      <DependentUpon>LibraryFineConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryFineConfig.aspx.vb">
+      <DependentUpon>LibraryFineConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryIssueReturnReport.aspx.designer.vb">
+      <DependentUpon>LibraryIssueReturnReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryIssueReturnReport.aspx.vb">
+      <DependentUpon>LibraryIssueReturnReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryMasterPage.master.designer.vb">
+      <DependentUpon>LibraryMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryMasterPage.master.vb">
+      <DependentUpon>LibraryMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryMembership.aspx.designer.vb">
+      <DependentUpon>LibraryMembership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryMembership.aspx.vb">
+      <DependentUpon>LibraryMembership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="libraryReports.aspx.designer.vb">
+      <DependentUpon>libraryReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="libraryReports.aspx.vb">
+      <DependentUpon>libraryReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibrarySearch.aspx.designer.vb">
+      <DependentUpon>LibrarySearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarySearch.aspx.vb">
+      <DependentUpon>LibrarySearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MagazineMaster.aspx.designer.vb">
+      <DependentUpon>MagazineMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MagazineMaster.aspx.vb">
+      <DependentUpon>MagazineMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageAdmissionDues.aspx.designer.vb">
+      <DependentUpon>ManageAdmissionDues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAdmissionDues.aspx.vb">
+      <DependentUpon>ManageAdmissionDues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageDocuments.aspx.designer.vb">
+      <DependentUpon>ManageDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageDocuments.aspx.vb">
+      <DependentUpon>ManageDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.vb">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.vb">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageTemplateMaster.aspx.designer.vb">
+      <DependentUpon>MessageTemplateMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTemplateMaster.aspx.vb">
+      <DependentUpon>MessageTemplateMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Nationality.aspx.designer.vb">
+      <DependentUpon>Nationality.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nationality.aspx.vb">
+      <DependentUpon>Nationality.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsPaperMaster.aspx.designer.vb">
+      <DependentUpon>NewsPaperMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsPaperMaster.aspx.vb">
+      <DependentUpon>NewsPaperMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsPaperReport.aspx.designer.vb">
+      <DependentUpon>NewsPaperReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsPaperReport.aspx.vb">
+      <DependentUpon>NewsPaperReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsPaperTransact.aspx.designer.vb">
+      <DependentUpon>NewsPaperTransact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsPaperTransact.aspx.vb">
+      <DependentUpon>NewsPaperTransact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OccupationMaster.aspx.designer.vb">
+      <DependentUpon>OccupationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OccupationMaster.aspx.vb">
+      <DependentUpon>OccupationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParamsMaster.aspx.designer.vb">
+      <DependentUpon>ParamsMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParamsMaster.aspx.vb">
+      <DependentUpon>ParamsMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PayrollMaster.master.designer.vb">
+      <DependentUpon>PayrollMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollMaster.master.vb">
+      <DependentUpon>PayrollMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayrollTransaction.master.designer.vb">
+      <DependentUpon>PayrollTransaction.master</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollTransaction.master.vb">
+      <DependentUpon>PayrollTransaction.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayScaleMaster.aspx.designer.vb">
+      <DependentUpon>PayScaleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PayScaleMaster.aspx.vb">
+      <DependentUpon>PayScaleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PettyCashCollectionReport.aspx.designer.vb">
+      <DependentUpon>PettyCashCollectionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashCollectionReport.aspx.vb">
+      <DependentUpon>PettyCashCollectionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PettyCashHeads.aspx.designer.vb">
+      <DependentUpon>PettyCashHeads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashHeads.aspx.vb">
+      <DependentUpon>PettyCashHeads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PettyCashJournalEntry.aspx.designer.vb">
+      <DependentUpon>PettyCashJournalEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashJournalEntry.aspx.vb">
+      <DependentUpon>PettyCashJournalEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PettyCashStatement.aspx.designer.vb">
+      <DependentUpon>PettyCashStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashStatement.aspx.vb">
+      <DependentUpon>PettyCashStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PettyCashTransactions.aspx.designer.vb">
+      <DependentUpon>PettyCashTransactions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashTransactions.aspx.vb">
+      <DependentUpon>PettyCashTransactions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PettyStatement.aspx.designer.vb">
+      <DependentUpon>PettyStatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PettyStatement.aspx.vb">
+      <DependentUpon>PettyStatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promotion.aspx.designer.vb">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promotion.aspx.vb">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublisherMaster.aspx.designer.vb">
+      <DependentUpon>PublisherMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublisherMaster.aspx.vb">
+      <DependentUpon>PublisherMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Qualifications.aspx.designer.vb">
+      <DependentUpon>Qualifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Qualifications.aspx.vb">
+      <DependentUpon>Qualifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RackMaster.aspx.designer.vb">
+      <DependentUpon>RackMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RackMaster.aspx.vb">
+      <DependentUpon>RackMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReligionMaster.aspx.designer.vb">
+      <DependentUpon>ReligionMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReligionMaster.aspx.vb">
+      <DependentUpon>ReligionMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemarksMaster.aspx.designer.vb">
+      <DependentUpon>RemarksMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemarksMaster.aspx.vb">
+      <DependentUpon>RemarksMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalaryHeadMaster.aspx.designer.vb">
+      <DependentUpon>SalaryHeadMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryHeadMaster.aspx.vb">
+      <DependentUpon>SalaryHeadMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchoolInfo.aspx.designer.vb">
+      <DependentUpon>SchoolInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolInfo.aspx.vb">
+      <DependentUpon>SchoolInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchDocument.aspx.designer.vb">
+      <DependentUpon>SearchDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDocument.aspx.vb">
+      <DependentUpon>SearchDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SectionMaster.aspx.designer.vb">
+      <DependentUpon>SectionMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SectionMaster.aspx.vb">
+      <DependentUpon>SectionMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SeeDocoment.aspx.designer.vb">
+      <DependentUpon>SeeDocoment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SeeDocoment.aspx.vb">
+      <DependentUpon>SeeDocoment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendSMS.aspx.designer.vb">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendSMS.aspx.vb">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Set Leave Timeframe.aspx.designer.vb">
+      <DependentUpon>Set Leave Timeframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Set Leave Timeframe.aspx.vb">
+      <DependentUpon>Set Leave Timeframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SeverityMaster.aspx.designer.vb">
+      <DependentUpon>SeverityMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SeverityMaster.aspx.vb">
+      <DependentUpon>SeverityMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMSConfiguration.aspx.designer.vb">
+      <DependentUpon>SMSConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMSConfiguration.aspx.vb">
+      <DependentUpon>SMSConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMSReport.aspx.designer.vb">
+      <DependentUpon>SMSReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMSReport.aspx.vb">
+      <DependentUpon>SMSReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SMSTemplates.aspx.designer.vb">
+      <DependentUpon>SMSTemplates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SMSTemplates.aspx.vb">
+      <DependentUpon>SMSTemplates.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="StateMaster.aspx.designer.vb">
+      <DependentUpon>StateMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StateMaster.aspx.vb">
+      <DependentUpon>StateMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatusMaster.aspx.designer.vb">
+      <DependentUpon>StatusMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatusMaster.aspx.vb">
+      <DependentUpon>StatusMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Status_Payroll.aspx.designer.vb">
+      <DependentUpon>Status_Payroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Status_Payroll.aspx.vb">
+      <DependentUpon>Status_Payroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock.master.designer.vb">
+      <DependentUpon>Stock.master</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.master.vb">
+      <DependentUpon>Stock.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockRegister.aspx.designer.vb">
+      <DependentUpon>StockRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockRegister.aspx.vb">
+      <DependentUpon>StockRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockSummary.aspx.designer.vb">
+      <DependentUpon>StockSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockSummary.aspx.vb">
+      <DependentUpon>StockSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAnalysis.aspx.designer.vb">
+      <DependentUpon>StudentAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAnalysis.aspx.vb">
+      <DependentUpon>StudentAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAttendance.aspx.designer.vb">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendance.aspx.vb">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentClassList.aspx.designer.vb">
+      <DependentUpon>StudentClassList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentClassList.aspx.vb">
+      <DependentUpon>StudentClassList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEnquiry.aspx.designer.vb">
+      <DependentUpon>StudentEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEnquiry.aspx.vb">
+      <DependentUpon>StudentEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEnquiryCompare.aspx.designer.vb">
+      <DependentUpon>StudentEnquiryCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEnquiryCompare.aspx.vb">
+      <DependentUpon>StudentEnquiryCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEnquiryConfirm.aspx.designer.vb">
+      <DependentUpon>StudentEnquiryConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEnquiryConfirm.aspx.vb">
+      <DependentUpon>StudentEnquiryConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentEnquiryReport.aspx.designer.vb">
+      <DependentUpon>StudentEnquiryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentEnquiryReport.aspx.vb">
+      <DependentUpon>StudentEnquiryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentFatherPromotion.aspx.designer.vb">
+      <DependentUpon>StudentFatherPromotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFatherPromotion.aspx.vb">
+      <DependentUpon>StudentFatherPromotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentICard.aspx.designer.vb">
+      <DependentUpon>StudentICard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentICard.aspx.vb">
+      <DependentUpon>StudentICard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentLeaveReport.aspx.designer.vb">
+      <DependentUpon>StudentLeaveReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLeaveReport.aspx.vb">
+      <DependentUpon>StudentLeaveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMaster.aspx.designer.vb">
+      <DependentUpon>StudentMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMaster.aspx.vb">
+      <DependentUpon>StudentMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMaster.master.designer.vb">
+      <DependentUpon>StudentMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMaster.master.vb">
+      <DependentUpon>StudentMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentNotes.aspx.designer.vb">
+      <DependentUpon>StudentNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentNotes.aspx.vb">
+      <DependentUpon>StudentNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentReport.master.designer.vb">
+      <DependentUpon>StudentReport.master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentReport.master.vb">
+      <DependentUpon>StudentReport.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentSearch.aspx.designer.vb">
+      <DependentUpon>StudentSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSearch.aspx.vb">
+      <DependentUpon>StudentSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentSiblings.aspx.designer.vb">
+      <DependentUpon>StudentSiblings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSiblings.aspx.vb">
+      <DependentUpon>StudentSiblings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentStrength.aspx.designer.vb">
+      <DependentUpon>StudentStrength.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentStrength.aspx.vb">
+      <DependentUpon>StudentStrength.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Subsec.aspx.designer.vb">
+      <DependentUpon>Student_Subsec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Subsec.aspx.vb">
+      <DependentUpon>Student_Subsec.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="StudyMediumMaster.aspx.designer.vb">
+      <DependentUpon>StudyMediumMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudyMediumMaster.aspx.vb">
+      <DependentUpon>StudyMediumMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubjectMapping.aspx.designer.vb">
+      <DependentUpon>SubjectMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectMapping.aspx.vb">
+      <DependentUpon>SubjectMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubjectMappingImport.aspx.designer.vb">
+      <DependentUpon>SubjectMappingImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectMappingImport.aspx.vb">
+      <DependentUpon>SubjectMappingImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubjectMaster.aspx.designer.vb">
+      <DependentUpon>SubjectMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectMaster.aspx.vb">
+      <DependentUpon>SubjectMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubjectPriority.aspx.designer.vb">
+      <DependentUpon>SubjectPriority.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectPriority.aspx.vb">
+      <DependentUpon>SubjectPriority.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubSectionMaster.aspx.designer.vb">
+      <DependentUpon>SubSectionMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubSectionMaster.aspx.vb">
+      <DependentUpon>SubSectionMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Syllabus.aspx.designer.vb">
+      <DependentUpon>Syllabus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Syllabus.aspx.vb">
+      <DependentUpon>Syllabus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tabs.aspx.designer.vb">
+      <DependentUpon>Tabs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs.aspx.vb">
+      <DependentUpon>Tabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherInbox.aspx.designer.vb">
+      <DependentUpon>TeacherInbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherInbox.aspx.vb">
+      <DependentUpon>TeacherInbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherMasterPage.master.designer.vb">
+      <DependentUpon>TeacherMasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherMasterPage.master.vb">
+      <DependentUpon>TeacherMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherNotes.aspx.designer.vb">
+      <DependentUpon>TeacherNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherNotes.aspx.vb">
+      <DependentUpon>TeacherNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherNotesReport.aspx.designer.vb">
+      <DependentUpon>TeacherNotesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherNotesReport.aspx.vb">
+      <DependentUpon>TeacherNotesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherSubjectMap.aspx.designer.vb">
+      <DependentUpon>TeacherSubjectMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherSubjectMap.aspx.vb">
+      <DependentUpon>TeacherSubjectMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestMaster.Master.designer.vb">
+      <DependentUpon>TestMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TestMaster.Master.vb">
+      <DependentUpon>TestMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTable.aspx.designer.vb">
+      <DependentUpon>TimeTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTable.aspx.vb">
+      <DependentUpon>TimeTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeTableToday.aspx.designer.vb">
+      <DependentUpon>TimeTableToday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableToday.aspx.vb">
+      <DependentUpon>TimeTableToday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransportMaster.aspx.designer.vb">
+      <DependentUpon>TransportMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransportMaster.aspx.vb">
+      <DependentUpon>TransportMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TT1.aspx.designer.vb">
+      <DependentUpon>TT1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TT1.aspx.vb">
+      <DependentUpon>TT1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TTConfig.aspx.designer.vb">
+      <DependentUpon>TTConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TTConfig.aspx.vb">
+      <DependentUpon>TTConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TTGenerate.aspx.designer.vb">
+      <DependentUpon>TTGenerate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TTGenerate.aspx.vb">
+      <DependentUpon>TTGenerate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TTManual.aspx.designer.vb">
+      <DependentUpon>TTManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TTManual.aspx.vb">
+      <DependentUpon>TTManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpcomingActivities.aspx.designer.vb">
+      <DependentUpon>UpcomingActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpcomingActivities.aspx.vb">
+      <DependentUpon>UpcomingActivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPermissions.aspx.designer.vb">
+      <DependentUpon>UserPermissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPermissions.aspx.vb">
+      <DependentUpon>UserPermissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VaccinationMaster.aspx.designer.vb">
+      <DependentUpon>VaccinationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VaccinationMaster.aspx.vb">
+      <DependentUpon>VaccinationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VenderMaster.aspx.designer.vb">
+      <DependentUpon>VenderMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VenderMaster.aspx.vb">
+      <DependentUpon>VenderMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLeaveRecords.aspx.designer.vb">
+      <DependentUpon>ViewLeaveRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLeaveRecords.aspx.vb">
+      <DependentUpon>ViewLeaveRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Exam_Reports\rptCBSEReportCard_XI.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptExamAdmitCard.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptExamDateSheet.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_ReportCard_T2.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptBlankSheetTerms_1.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptBlankSheetTerms.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptBlankSheetSubjects.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptCBSEReportCard.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptCBSEReportCard1.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_T1GL.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_T1GS.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_T1VB.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_T2GL.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_T2GS.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_T2VB.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp2_T1GL.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp2_T1GS.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp2_T1VB.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp2_T2GL.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp2_T2GS.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp2_T2VB.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptMarksEntryStatus.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptTabulationSheetFA.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp2_ReportCard_T2.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptUserPermissions.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptExamTermMappingList.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptSubjectMappingList.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptSummativeAssessment.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptTabulationSheetSA.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptTermWiseSubjectList.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptBlankSheet.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGroup3_ReportCard_1.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_ReportCard.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp1_ReportCard_1.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp4_Consolidate.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptGrp4_ReportCard_1.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptPromotionList.rdlc" />
+    <EmbeddedResource Include="Exam_Reports\rptSummarySheet.rdlc" />
+    <EmbeddedResource Include="Report\rptAtt.rdlc" />
+    <EmbeddedResource Include="Report\rptCharacter.rdlc" />
+    <EmbeddedResource Include="Report\rptCharacterHindi.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeCert.rdlc" />
+    <EmbeddedResource Include="Report\rptCharacterOld1.rdlc" />
+    <EmbeddedResource Include="Report\rptBonafide.rdlc" />
+    <EmbeddedResource Include="Report\rptDOB.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeNew.rdlc" />
+    <EmbeddedResource Include="Report\rptPettyCashCollection.rdlc" />
+    <EmbeddedResource Include="Report\rptPettyCashRcpt.rdlc" />
+    <EmbeddedResource Include="Report\rptPettyCashUserWise.rdlc" />
+    <EmbeddedResource Include="Report\rptPromotionListNew.rdlc" />
+    <EmbeddedResource Include="Report\rptRegistrationFeeReceipt.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeConcessionHeadWise.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeReceiptKG.rdlc" />
+    <EmbeddedResource Include="Report\rptAddmissionSlip.rdlc" />
+    <EmbeddedResource Include="Report\rptBankStatement.rdlc" />
+    <EmbeddedResource Include="Report\rptBusFeeCollection.rdlc" />
+    <EmbeddedResource Include="Report\rptCertStudying.rdlc" />
+    <EmbeddedResource Include="Report\rptCharacterOLD.rdlc" />
+    <EmbeddedResource Include="Report\rptClassList.rdlc" />
+    <EmbeddedResource Include="Report\rptDOBOld.rdlc" />
+    <EmbeddedResource Include="Report\rptEmpAttendance.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeCertificate.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeChallan.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeChallanIndivisual.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeCollection.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeCollectionHeadWise.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeCollectionTermWise.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeDemandRegister.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeDue.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeDueHeadWise.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeLabel.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeReceipt.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeReminder.rdlc" />
+    <EmbeddedResource Include="Report\rptFeeSummary.rdlc" />
+    <EmbeddedResource Include="Report\rptLedger.rdlc" />
+    <EmbeddedResource Include="Report\rptLedgerBalanceSheet.rdlc" />
+    <EmbeddedResource Include="Report\rptLedgerSummary.rdlc" />
+    <EmbeddedResource Include="Report\rptLibraryAccno.rdlc" />
+    <EmbeddedResource Include="Report\rptLibraryBarCode.rdlc" />
+    <EmbeddedResource Include="Report\rptLibraryTransaction.rdlc" />
+    <EmbeddedResource Include="Report\rptMarksEntry.rdlc" />
+    <EmbeddedResource Include="Report\rptMarks_Verification.rdlc" />
+    <EmbeddedResource Include="Report\rptPettyCash.rdlc" />
+    <EmbeddedResource Include="Report\rptSalarySlip.rdlc" />
+    <EmbeddedResource Include="Report\rptStudentAttendanceSummary.rdlc" />
+    <EmbeddedResource Include="Report\rptStudentBioData.rdlc" />
+    <EmbeddedResource Include="Report\rptStudentICard.rdlc" />
+    <EmbeddedResource Include="Report\rptStudentStrength.rdlc" />
+    <EmbeddedResource Include="Report\rptStudentVerification.rdlc" />
+    <EmbeddedResource Include="Report\rptTC.rdlc" />
+    <EmbeddedResource Include="Report\rptTCICSE.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="MasterPage.master" />
+    <Content Include="FeeMasterPage.master" />
+    <Content Include="AdminMaster.master" />
+    <Content Include="BusMaster.master" />
+    <Content Include="Certificates.master" />
+    <Content Include="ExamAdminMasterPage.Master" />
+    <Content Include="ExamMasterPage.Master" />
+    <Content Include="IssueBookMaster.master" />
+    <Content Include="LibraryMasterPage.master" />
+    <Content Include="iDiaryPanel\images\ArmyPublicSchool.psd" />
+    <Content Include="iDiaryPanel\images\ArmyPublicSchool\ArmyPublicSchool.psd" />
+    <Content Include="iDiaryPanel\Parent\ParentMaster.master" />
+    <Content Include="iDiaryDataset.xsc">
+      <DependentUpon>iDiaryDataset.xsd</DependentUpon>
+    </Content>
+    <None Include="iDiaryDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>iDiaryDataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="iDiaryDataset.xss">
+      <DependentUpon>iDiaryDataset.xsd</DependentUpon>
+    </Content>
+    <Content Include="iDiaryV3_GyanLokDataSet.xsc">
+      <DependentUpon>iDiaryV3_GyanLokDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="iDiaryV3_GyanLokDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>iDiaryV3_GyanLokDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="iDiaryV3_GyanLokDataSet.xss">
+      <DependentUpon>iDiaryV3_GyanLokDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="iDiaryV3_GyanLokDataSet1.xsc">
+      <DependentUpon>iDiaryV3_GyanLokDataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="iDiaryV3_GyanLokDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>iDiaryV3_GyanLokDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="iDiaryV3_GyanLokDataSet1.xss">
+      <DependentUpon>iDiaryV3_GyanLokDataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\DKG.pubxml" />
+    <None Include="My Project\PublishProfiles\dominics.pubxml" />
+    <None Include="My Project\PublishProfiles\iDiary_V3.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="PayrollMaster.master" />
+    <Content Include="PayrollTransaction.master" />
+    <Content Include="TestMaster.Master" />
+    <Content Include="Site1.Master" />
+    <Content Include="Stock.master" />
+    <Content Include="StudentReport.master" />
+    <Content Include="TeacherMasterPage.master" />
+    <Content Include="StudentMaster.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Activity\" />
+    <Folder Include="Assignments\" />
+    <Folder Include="Backup\" />
+    <Folder Include="bin\" />
+    <Folder Include="Circulars\" />
+    <Folder Include="html\" />
+    <Folder Include="iDiaryPanel\Documents\" />
+    <Folder Include="images1\" />
+    <Folder Include="Photos\" />
+    <Folder Include="StudentNotes\" />
+    <Folder Include="Syllabus\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>7001</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58880/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AcademicCalender.aspx">
+      <publishTime>04/28/2017 11:01:44</publishTime>
+    </File>
+    <File Include="AcademicSession.aspx">
+      <publishTime>04/28/2017 11:16:14</publishTime>
+    </File>
+    <File Include="AcademicSessionMaster.aspx">
+      <publishTime>04/28/2017 11:01:44</publishTime>
+    </File>
+    <File Include="AccessDenied.aspx">
+      <publishTime>04/28/2017 11:01:44</publishTime>
+    </File>
+    <File Include="AddmissionSlip.aspx">
+      <publishTime>04/28/2017 11:01:44</publishTime>
+    </File>
+    <File Include="AdminEntry.aspx">
+      <publishTime>04/28/2017 11:01:44</publishTime>
+    </File>
+    <File Include="AdminHome.aspx">
+      <publishTime>04/28/2017 11:01:44</publishTime>
+    </File>
+    <File Include="AdminInbox.aspx">
+      <publishTime>04/28/2017 11:01:44</publishTime>
+    </File>
+    <File Include="AdminMaster.master">
+      <publishTime>04/14/2018 16:39:12</publishTime>
+    </File>
+    <File Include="AllergyMaster.aspx">
+      <publishTime>04/28/2017 11:01:44</publishTime>
+    </File>
+    <File Include="AssignFeeBookNo.aspx">
+      <publishTime>05/12/2017 13:29:28</publishTime>
+    </File>
+    <File Include="Assignments.aspx">
+      <publishTime>05/12/2017 14:42:26</publishTime>
+    </File>
+    <File Include="AssignRegNo.aspx">
+      <publishTime>05/12/2017 13:29:28</publishTime>
+    </File>
+    <File Include="AssignRollNo.aspx">
+      <publishTime>05/12/2017 13:41:52</publishTime>
+    </File>
+    <File Include="AttendanceReport.aspx">
+      <publishTime>02/07/2020 11:49:08</publishTime>
+    </File>
+    <File Include="AuthorMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BackupRecovery.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="Bank.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BankStudent.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>04/08/2016 04:22:44</publishTime>
+    </File>
+    <File Include="bin/iDiary_V3.dll">
+      <publishTime>09/02/2021 12:42:34</publishTime>
+    </File>
+    <File Include="bin/iDiary_V3.pdb">
+      <publishTime>12/10/2019 13:29:41</publishTime>
+    </File>
+    <File Include="bin/iDiary_V3.xml">
+      <publishTime>09/02/2021 12:42:34</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>11/17/2018 03:31:54</publishTime>
+    </File>
+    <File Include="bin/WebControlCaptcha.dll">
+      <publishTime>11/19/2016 03:04:10</publishTime>
+    </File>
+    <File Include="BloodGroupMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BoardMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BookCategoryMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BookMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BookStatusMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusConveyanceMaster.aspx">
+      <publishTime>08/13/2016 15:15:25</publishTime>
+    </File>
+    <File Include="BusconveyanceModeMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusConveyanceTypeMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusCoveyanceFeeConfig.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusDetails.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusDriverMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusFeeCollectionReport.aspx">
+      <publishTime>05/12/2017 15:15:48</publishTime>
+    </File>
+    <File Include="BusFeeDeposit.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusFeeDueConfig.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusFeeDueList.aspx">
+      <publishTime>05/12/2017 15:16:10</publishTime>
+    </File>
+    <File Include="BusFeeImport.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusHeadTypeConfig.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusLocationMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusMaster.master">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusMasterEntry.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusRouteAssign.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusRouteMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusStudentConveyance.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusStudentList.aspx">
+      <publishTime>08/13/2016 15:15:25</publishTime>
+    </File>
+    <File Include="BusTermMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="BusTypeMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="CasteMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="CategoryMaster.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="Certificates.master">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="Cert_Char.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="Cert_DOB.aspx">
+      <publishTime>08/20/2021 12:16:25</publishTime>
+    </File>
+    <File Include="Cert_Fee.aspx">
+      <publishTime>09/26/2019 18:24:27</publishTime>
+    </File>
+    <File Include="Cert_Home.aspx">
+      <publishTime>04/28/2017 11:01:46</publishTime>
+    </File>
+    <File Include="Cert_TC.aspx">
+      <publishTime>07/06/2020 11:37:00</publishTime>
+    </File>
+    <File Include="Cert_TCList.aspx">
+      <publishTime>07/23/2017 15:22:44</publishTime>
+    </File>
+    <File Include="ChangePassword.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="Circulars.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="CityMaster.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ClassMaster.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ClassSecConfig.aspx">
+      <publishTime>05/15/2017 16:36:08</publishTime>
+    </File>
+    <File Include="ClassTeacherAssignment.aspx">
+      <publishTime>05/20/2017 10:34:28</publishTime>
+    </File>
+    <File Include="ClassTeacherMapping.aspx">
+      <publishTime>08/13/2016 15:15:26</publishTime>
+    </File>
+    <File Include="ClassTermConfig.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="CoScholasticSubjectMaster.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="CreateUsers.aspx">
+      <publishTime>05/16/2017 17:07:24</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>02/05/2018 13:37:04</publishTime>
+    </File>
+    <File Include="css/clndr.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/custom.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/font-awesome.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/font-awesome.min.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/Graphs.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/jquery-ui.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/jqvmap.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/lines.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/loginStyle.css">
+      <publishTime>05/03/2019 17:40:46</publishTime>
+    </File>
+    <File Include="css/roster/bootstrap.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/roster/bootstrap.js">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/roster/jquery-1.9.1.min.js">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/RosterStyle.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="css/StyleSheet.css">
+      <publishTime>05/04/2019 12:42:22</publishTime>
+    </File>
+    <File Include="Dashboard.aspx">
+      <publishTime>05/04/2019 15:32:50</publishTime>
+    </File>
+    <File Include="date_time.js">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="DepartmentMaster.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="Department_Payroll.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="DescriptiveIndicators.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="DesignationMaster.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="Designation_Payroll.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="DVDMaster.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpAcademicSession.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpAttRoster.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpBankStatement.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpConfigSalary.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpConfigSalaryHeads.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpCreditLeaves.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpGeneratePayBill.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpImportAttendance.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmployeeAttendance.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmployeeAttendanceReport.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmployeeMaster.aspx">
+      <publishTime>05/22/2017 13:48:30</publishTime>
+    </File>
+    <File Include="EmployeeSearch.aspx">
+      <publishTime>01/06/2020 18:45:59</publishTime>
+    </File>
+    <File Include="EmpMarkLeaves.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpPayrollHome.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpPendingLeaves.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpPhotos/01.jpg">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="EmpProcessSalary.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpSalaryHeadStatement.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpSalarySlip.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EmpUpdateCreditLeaves.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="Error.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="EventLog.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ExamAbbreviation.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ExamActivityMapping.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ExamAdminHome.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ExamAdminMasterPage.Master">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ExamAdmitCard.aspx">
+      <publishTime>09/26/2019 19:29:56</publishTime>
+    </File>
+    <File Include="ExamConfig.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ExamConfiguration.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ExamDateSheet.aspx">
+      <publishTime>09/26/2019 19:23:11</publishTime>
+    </File>
+    <File Include="ExamDescriptiveIndicators.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="ExamGradeMapping.aspx">
+      <publishTime>07/28/2017 19:11:38</publishTime>
+    </File>
+    <File Include="ExamGradeMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamGroupConfig.aspx">
+      <publishTime>09/19/2017 14:39:36</publishTime>
+    </File>
+    <File Include="ExamGroupMaster.aspx">
+      <publishTime>07/10/2017 17:37:12</publishTime>
+    </File>
+    <File Include="ExamHome.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamMarksProcessing.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamMasterPage.Master">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamRemarksMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamSubjectGroupmaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamSubjectMapping.aspx">
+      <publishTime>09/19/2017 14:22:20</publishTime>
+    </File>
+    <File Include="ExamSubjectMappingImport.aspx">
+      <publishTime>09/19/2017 14:07:46</publishTime>
+    </File>
+    <File Include="ExamSubjectMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamSubjectPriority.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamTermConfig.aspx">
+      <publishTime>07/28/2017 17:06:34</publishTime>
+    </File>
+    <File Include="ExamTermMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="ExamUserPermissions.aspx">
+      <publishTime>07/26/2017 09:09:34</publishTime>
+    </File>
+    <File Include="Exam_MarksEntry.aspx">
+      <publishTime>09/21/2017 09:54:42</publishTime>
+    </File>
+    <File Include="Exam_MarksEntryStudent.aspx">
+      <publishTime>04/28/2017 11:01:48</publishTime>
+    </File>
+    <File Include="Exam_ReportCard.aspx">
+      <publishTime>11/07/2019 17:51:03</publishTime>
+    </File>
+    <File Include="Exam_Reports.aspx">
+      <publishTime>10/24/2019 12:36:56</publishTime>
+    </File>
+    <File Include="FeeBankBranchMaster.aspx">
+      <publishTime>05/15/2017 14:44:44</publishTime>
+    </File>
+    <File Include="FeeBankMaster.aspx">
+      <publishTime>05/15/2017 11:10:46</publishTime>
+    </File>
+    <File Include="FeeChallan.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeChqDisHonoured.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeConcessionTypeMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeConfig.aspx">
+      <publishTime>05/16/2019 16:46:28</publishTime>
+    </File>
+    <File Include="FeeConfigStudentWise.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeDeposit.aspx">
+      <publishTime>08/02/2018 18:02:40</publishTime>
+    </File>
+    <File Include="FeeDueConfig.aspx">
+      <publishTime>05/22/2017 13:48:30</publishTime>
+    </File>
+    <File Include="FeeGroupMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeImport.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeMasterPage.master">
+      <publishTime>05/17/2017 12:38:20</publishTime>
+    </File>
+    <File Include="FeeOnlineImport.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeReport.aspx">
+      <publishTime>01/06/2020 16:55:55</publishTime>
+    </File>
+    <File Include="FeeStudentConcessionConfig.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeTermMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeTypeConfig.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="FeeTypes.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>04/28/2017 11:01:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="generateParentLoginIndi.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="GenerateParentLogins.aspx">
+      <publishTime>04/14/2018 17:22:52</publishTime>
+    </File>
+    <File Include="GradePayMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="gview.htm">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="HeadwiseReport.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="HealthCard.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="HouseMaster.aspx">
+      <publishTime>04/28/2017 11:01:50</publishTime>
+    </File>
+    <File Include="iDiaryDataset.xsc">
+      <publishTime>08/20/2021 13:07:58</publishTime>
+    </File>
+    <File Include="iDiaryDataset.xss">
+      <publishTime>08/20/2021 13:07:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Assignments/Tulips.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Circulars/Hydrangeas.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/css/style.css">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/arrow1.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/bg-sadho.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/bg.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/bg.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/big-icon.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/com_logo.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/filed-bg1.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/filed-bg2.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/header.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/icon.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/icon_alumini.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/icon_cal.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/icon_chnage.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/icon_event.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/icon_help.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/icon_home.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/icon_logout.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/line-bg.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/line.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/logo-i.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/logo-school.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/logo.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/logo.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/sing-bg.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/sing-line.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/singup-button.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/image/top-bg.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/appicationbut.gif">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/ArmyPublicSchool.psd">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/ArmyPublicSchool/Army.JPG">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/ArmyPublicSchool/ArmyPublicSchool.psd">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/ArmyPublicSchool/loginlogo.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/ArmyPublicSchool/logo.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/arrow.gif">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/idiarylogo.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/img1.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/img2.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/img_bg.gif">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/infotechlogo.gif">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/loging_but.gif">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/loging_but.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/loginlogo.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/loginlogo.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/login_bg.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/logo.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/logo.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/main_bg.gif">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/qut_bg.gif">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/scroll.gif">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/sub_bg.png">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/images/teacher1.jpg">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/js/scroll.js">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ApplyLeave.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ChangePassword.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ChangeProfile.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ComposeMessage.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/FeeHistory.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ParentHome.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ParentMaster.master">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ProgressReport.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/SentMessages.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/SubmitThought.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/UpcomingActivity.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewAcademicCalender.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewAllThoughts.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewAssignments.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewAttendance.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewCirculars.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewClassmates.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/viewLeave.aspx">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewMessages.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewProgressReport.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewSyllabus.aspx">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewTeachers.aspx">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Parent/ViewTimeTable.aspx">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="iDiaryPanel/ParentLogin.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/ParentLogout.aspx">
+      <publishTime>04/28/2017 11:01:58</publishTime>
+    </File>
+    <File Include="iDiaryPanel/Syllabus/Penguins.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="iDiaryV3_GyanLokDataSet.xsc">
+      <publishTime>09/26/2019 18:52:41</publishTime>
+    </File>
+    <File Include="iDiaryV3_GyanLokDataSet.xss">
+      <publishTime>09/26/2019 18:52:41</publishTime>
+    </File>
+    <File Include="iDiaryV3_GyanLokDataSet1.xsc">
+      <publishTime>09/26/2019 18:59:55</publishTime>
+    </File>
+    <File Include="iDiaryV3_GyanLokDataSet1.xss">
+      <publishTime>09/26/2019 18:59:55</publishTime>
+    </File>
+    <File Include="images/arrow-left.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/arrow-right.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/arrow1.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/bg-sadho.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/bg.jpg">
+      <publishTime>05/22/2017 11:43:44</publishTime>
+    </File>
+    <File Include="images/ClassRoomMaster.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/cloud.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/DownArrow.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/EmpDummy.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/filed-bg1.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/filed-bg2.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/head-bg.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/Header_Cert.JPG">
+      <publishTime>05/16/2019 12:24:12</publishTime>
+    </File>
+    <File Include="images/icons/admission.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/alumni.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/calculator.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/calender.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/certificate.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/change.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/configurations.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/edocs.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/enquiry.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/examination.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/fee.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/health.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/help.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/home.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/hr.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/library.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/logout.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/messaging.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/report.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/student.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/teachers.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/timetable.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/training.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/icons/transport.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/line.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/loader.gif">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/Loginlogo.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/Refresh.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/SchoolLogo.png">
+      <publishTime>05/12/2017 17:49:44</publishTime>
+    </File>
+    <File Include="images/sing-bg.jpg">
+      <publishTime>03/25/2017 16:03:12</publishTime>
+    </File>
+    <File Include="images/sing-line.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/singup-button.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/StudentDummy.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/top-bg.png">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="images/UpArrow.jpg">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>05/03/2019 12:33:38</publishTime>
+    </File>
+    <File Include="Inventory.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="InventoryLedger.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="InventoryStoreMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="InventoryVendors.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="IssueBook.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="IssueBookMaster.master">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="itemMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="itemUnitMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/Chart.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/clndr.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/custom.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/d3.v3.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/jquery-1.10.2.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/jquery-1.9.1.min.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/jquery-ui.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/jquery.vmap.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/jquery.vmap.sampledata.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/jquery.vmap.world.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/metisMenu.min.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/moment-2.2.1.js">
+      <publishTime>04/28/2017 11:02:00</publishTime>
+    </File>
+    <File Include="js/rickshaw.js">
+      <publishTime>04/28/2017 11:02:02</publishTime>
+    </File>
+    <File Include="js/site.js">
+      <publishTime>04/28/2017 11:02:02</publishTime>
+    </File>
+    <File Include="js/underscore-min.js">
+      <publishTime>04/28/2017 11:02:02</publishTime>
+    </File>
+    <File Include="LanguageMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LeaveMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LessonPlan.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LibraryBarCodeGeneration.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LibraryBookHistory.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LibraryFineConfig.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LibraryIssueReturnReport.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LibraryMasterPage.master">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LibraryMembership.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="libraryReports.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="LibrarySearch.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>05/03/2019 12:09:18</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="MagazineMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="ManageAdmissionDues.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="ManageDocuments.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="MasterPage.master">
+      <publishTime>01/06/2020 17:00:31</publishTime>
+    </File>
+    <File Include="MessageTemplateMaster.aspx">
+      <publishTime>05/18/2017 16:42:58</publishTime>
+    </File>
+    <File Include="Nationality.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="NewsPaperMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="NewsPaperReport.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="NewsPaperTransact.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="OccupationMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="ParamsMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="PayrollMaster.master">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="PayrollTransaction.master">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="PayScaleMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="PettyCashCollectionReport.aspx">
+      <publishTime>12/24/2016 01:31:46</publishTime>
+    </File>
+    <File Include="PettyCashHeads.aspx">
+      <publishTime>12/24/2016 01:31:46</publishTime>
+    </File>
+    <File Include="PettyCashJournalEntry.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="PettyCashStatement.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="PettyCashTransactions.aspx">
+      <publishTime>09/19/2019 15:52:54</publishTime>
+    </File>
+    <File Include="PettyStatement.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="Promotion.aspx">
+      <publishTime>05/13/2017 14:44:28</publishTime>
+    </File>
+    <File Include="PublisherMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="Qualifications.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="RackMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="ReligionMaster.aspx">
+      <publishTime>04/28/2017 11:01:52</publishTime>
+    </File>
+    <File Include="RemarksMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SalaryHeadMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SchoolInfo.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SearchDocument.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SectionMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SeeDocoment.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SendSMS.aspx">
+      <publishTime>07/23/2019 14:08:47</publishTime>
+    </File>
+    <File Include="Set Leave Timeframe.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SeverityMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="Site1.Master">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SMSConfiguration.aspx">
+      <publishTime>07/23/2019 11:37:39</publishTime>
+    </File>
+    <File Include="SMSReport.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SMSTemplates.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="StateMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="StatusMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="Status_Payroll.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="Stock.master">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="StockRegister.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="StockSummary.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="StudentAnalysis.aspx">
+      <publishTime>05/16/2017 17:48:42</publishTime>
+    </File>
+    <File Include="StudentAttendance.aspx">
+      <publishTime>07/23/2019 17:04:55</publishTime>
+    </File>
+    <File Include="StudentClassList.aspx">
+      <publishTime>05/12/2017 16:57:04</publishTime>
+    </File>
+    <File Include="StudentEnquiry.aspx">
+      <publishTime>05/22/2017 13:41:22</publishTime>
+    </File>
+    <File Include="StudentEnquiryCompare.aspx">
+      <publishTime>02/18/2019 11:10:34</publishTime>
+    </File>
+    <File Include="StudentEnquiryConfirm.aspx">
+      <publishTime>05/12/2017 17:04:52</publishTime>
+    </File>
+    <File Include="StudentEnquiryReport.aspx">
+      <publishTime>05/22/2017 13:42:30</publishTime>
+    </File>
+    <File Include="StudentFatherPromotion.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="StudentICard.aspx">
+      <publishTime>01/06/2020 17:15:02</publishTime>
+    </File>
+    <File Include="StudentLeaveReport.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="StudentMaster.aspx">
+      <publishTime>09/19/2019 15:38:03</publishTime>
+    </File>
+    <File Include="StudentMaster.master">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="StudentNotes.aspx">
+      <publishTime>05/22/2017 13:48:32</publishTime>
+    </File>
+    <File Include="StudentReport.master">
+      <publishTime>01/04/2021 14:32:59</publishTime>
+    </File>
+    <File Include="StudentSearch.aspx">
+      <publishTime>05/28/2020 16:30:23</publishTime>
+    </File>
+    <File Include="StudentSiblings.aspx">
+      <publishTime>05/14/2017 12:16:46</publishTime>
+    </File>
+    <File Include="StudentStrength.aspx">
+      <publishTime>04/14/2018 17:25:32</publishTime>
+    </File>
+    <File Include="Student_Subsec.aspx">
+      <publishTime>09/25/2017 13:11:42</publishTime>
+    </File>
+    <File Include="StudyMediumMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="stylesheet.css">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SubjectMapping.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SubjectMappingImport.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SubjectMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SubjectPriority.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="SubSectionMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="Syllabus.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="Tabs.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TeacherInbox.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TeacherMasterPage.master">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TeacherNotes.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TeacherNotesReport.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TeacherSubjectMap.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="Test.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TestMaster.Master">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TimeTable.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TimeTableToday.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TransportMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TT1.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TTConfig.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TTGenerate.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="TTManual.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="UpcomingActivities.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="UserPermissions.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="VaccinationMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="VenderMaster.aspx">
+      <publishTime>04/28/2017 11:01:54</publishTime>
+    </File>
+    <File Include="ViewLeaveRecords.aspx">
+      <publishTime>05/12/2017 17:28:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/02/2021 12:42:37</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
